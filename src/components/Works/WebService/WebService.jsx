@@ -2,16 +2,16 @@ import { Image } from "@chakra-ui/image";
 import { Box, Center, Text, Grid, GridItem, Heading } from "@chakra-ui/layout";
 import React from "react";
 
-export default function Dogs() {
+export default function WebService() {
   return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={5} mb='5%'>
-      <GridItem colSpan={2} align="center">
-        <Heading as="h5" size="md" >
-          THE DOG APP
+    <Grid templateColumns="repeat(4, 1fr)" gap={5}>
+      <GridItem colSpan={4} align="center">
+        <Heading as="h5" size="md">
+          WebService
         </Heading>
       </GridItem>
 
-      <GridItem colSpan={1} align="right" mt='auto' mb='auto' >
+      <GridItem colSpan={2} align="right" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
           This was my first full stack experience at Henry Bootcamp. The Dogg
           App is a SPA (Single Page Application) that consumes data of an API
@@ -21,27 +21,35 @@ export default function Dogs() {
         </Text>
       </GridItem>
 
-      <GridItem colSpan={1} align="left" >
+      <GridItem colSpan={2} align="left">
         <Image
           w="530px"
           h="300px"
-          objectFit="cover"
-          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
+          objectFit="contain"
+          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
           alt="landing"
         />
       </GridItem>
 
       <GridItem colSpan={1} align="right">
         <Image
-          w="530px"
-          h="300px"
-          objectFit="cover"
-          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
+          w="300px"
+          objectFit="contain"
+          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
           alt="landing"
         />
       </GridItem>
 
-      <GridItem colSpan={1} align="left" mt='auto' mb='auto'>
+      <GridItem colSpan={1} align="right">
+        <Image
+          w="300px"
+          objectFit="contain"
+          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_3_vd7kaj.png"
+          alt="landing"
+        />
+      </GridItem>
+
+      <GridItem colSpan={2} align="left" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
           The technologies I used for this project were React, Redux and pure
           CSS for the FRONT-END, Node.js, Express, Sequelize and PSQL for the
@@ -49,7 +57,7 @@ export default function Dogs() {
         </Text>
       </GridItem>
 
-      <GridItem colSpan={1} align="right" mt='auto' mb='auto'>
+      <GridItem colSpan={2} align="right" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
           In the app you can create a breed selecting some characteristics and a
           photo. The new breed created is stored in the database. You can then
@@ -59,10 +67,18 @@ export default function Dogs() {
 
       <GridItem colSpan={1} align="cenleftter">
         <Image
-          w="530px"
-          h="300px"
-          objectFit="cover"
-          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
+          w="300px"
+          objectFit="contain"
+          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_4_bm6mog.png"
+          alt="landing"
+        />
+      </GridItem>
+
+      <GridItem colSpan={1} align="cenleftter">
+        <Image
+          w="300px"
+          objectFit="contain"
+          src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
           alt="landing"
         />
       </GridItem>

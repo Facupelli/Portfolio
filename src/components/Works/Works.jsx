@@ -2,6 +2,8 @@ import { Image } from "@chakra-ui/image";
 import { Box, Center, Grid, GridItem, Heading } from "@chakra-ui/layout";
 import React from "react";
 import Dogs from "./Dogs/Dogs";
+import WebService from "./WebService/WebService";
+
 
 export default function Works() {
   return (
@@ -13,6 +15,8 @@ export default function Works() {
       </Box>
       
       <Dogs />
+
+      <WebService />
     </Box>
   );
 }
