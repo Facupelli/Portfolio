@@ -1,14 +1,25 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Center, Text, Grid, GridItem, Heading } from "@chakra-ui/layout";
+import { Text, Grid, GridItem, Heading } from "@chakra-ui/layout";
 import React from "react";
+import { IconButton } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Flex } from "@chakra-ui/react";
 
 export default function WebService() {
   return (
     <Grid templateColumns="repeat(4, 1fr)" gap={5}>
-      <GridItem colSpan={4} align="center">
-        <Heading as="h5" size="md">
-          WebService
-        </Heading>
+      <GridItem colSpan={4}>
+        <Flex justify="center" align="center">
+          <Heading as="h5" size="md" mr="0.5%">
+            WebService
+          </Heading>
+          <IconButton
+            variant="text"
+            aria-label="external-link"
+            icon={<ExternalLinkIcon />}
+            ml="0.5%"
+          />
+        </Flex>
       </GridItem>
 
       <GridItem colSpan={2} align="right" mt="auto" mb="auto">
@@ -34,6 +45,7 @@ export default function WebService() {
       <GridItem colSpan={1} align="right">
         <Image
           w="300px"
+          h="250px"
           objectFit="contain"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
           alt="landing"
@@ -43,6 +55,7 @@ export default function WebService() {
       <GridItem colSpan={1} align="right">
         <Image
           w="300px"
+          h="250px"
           objectFit="contain"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_3_vd7kaj.png"
           alt="landing"
@@ -68,6 +81,7 @@ export default function WebService() {
       <GridItem colSpan={1} align="cenleftter">
         <Image
           w="300px"
+          h="250px"
           objectFit="contain"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_4_bm6mog.png"
           alt="landing"
@@ -77,6 +91,7 @@ export default function WebService() {
       <GridItem colSpan={1} align="cenleftter">
         <Image
           w="300px"
+          h="250px"
           objectFit="contain"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
           alt="landing"

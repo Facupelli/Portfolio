@@ -25,7 +25,7 @@ export default function Name() {
         <Text fontSize="md">
           I'm a developer with great team work ability. I'm always trying to
           learn from everything I see and from other people. I love being
-          autodidact and I'm very curios. I also make homemade beer 🍻
+          autodidact and I'm very curious. I also make homemade beer 🍻
         </Text>
       </Box>
       <Box mt='2%'>

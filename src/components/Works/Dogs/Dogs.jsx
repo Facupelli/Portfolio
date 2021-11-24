@@ -1,17 +1,27 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Center, Text, Grid, GridItem, Heading } from "@chakra-ui/layout";
+import { Text, Grid, GridItem, Heading, Flex } from "@chakra-ui/layout";
 import React from "react";
+import { IconButton } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Dogs() {
   return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={5} mb='5%'>
+    <Grid templateColumns="repeat(2, 1fr)" gap={5} mb="5%">
       <GridItem colSpan={2} align="center">
-        <Heading as="h5" size="md" >
-          THE DOG APP
-        </Heading>
+        <Flex justify="center" align="center">
+          <Heading as="h5" size="md">
+            THE DOG APP
+          </Heading>
+          <IconButton
+            variant="text"
+            aria-label="external-link"
+            icon={<ExternalLinkIcon />}
+            ml="0.5%"
+          />
+        </Flex>
       </GridItem>
 
-      <GridItem colSpan={1} align="right" mt='auto' mb='auto' >
+      <GridItem colSpan={1} align="right" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
           This was my first full stack experience at Henry Bootcamp. The Dogg
           App is a SPA (Single Page Application) that consumes data of an API
@@ -21,7 +31,7 @@ export default function Dogs() {
         </Text>
       </GridItem>
 
-      <GridItem colSpan={1} align="left" >
+      <GridItem colSpan={1} align="left">
         <Image
           w="530px"
           h="300px"
@@ -41,7 +51,7 @@ export default function Dogs() {
         />
       </GridItem>
 
-      <GridItem colSpan={1} align="left" mt='auto' mb='auto'>
+      <GridItem colSpan={1} align="left" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
           The technologies I used for this project were React, Redux and pure
           CSS for the FRONT-END, Node.js, Express, Sequelize and PSQL for the
@@ -49,7 +59,7 @@ export default function Dogs() {
         </Text>
       </GridItem>
 
-      <GridItem colSpan={1} align="right" mt='auto' mb='auto'>
+      <GridItem colSpan={1} align="right" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
           In the app you can create a breed selecting some characteristics and a
           photo. The new breed created is stored in the database. You can then
