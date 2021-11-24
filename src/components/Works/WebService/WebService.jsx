@@ -24,11 +24,10 @@ export default function WebService() {
 
       <GridItem colSpan={2} align="right" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
-          This was my first full stack experience at Henry Bootcamp. The Dogg
-          App is a SPA (Single Page Application) that consumes data of an API
-          (The Dog API). In the app you can find all dogs breeds, search breeds
-          by name, filter breeds by temperaments and order them by weight or
-          alphabetically.
+          This was my last project at Henry Bootcamp, I worked with 7 teammates
+          both in the FRONT-END and BACK-END to create this app. WebService is a
+          service e-commerce where you can login to offer or buy a service or
+          login as the Admin user.
         </Text>
       </GridItem>
 
@@ -64,17 +63,19 @@ export default function WebService() {
 
       <GridItem colSpan={2} align="left" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
-          The technologies I used for this project were React, Redux and pure
-          CSS for the FRONT-END, Node.js, Express, Sequelize and PSQL for the
-          BACK-END. Other tools I used were Git, Github, Heroku and Vercel.
+          The technologies we used for this project were React, Redux, Material
+          UI among other libraries for the FRONT-END, Node.js, Express,
+          Sequelize and PSQL for the BACK-END. Other tools we used were Git,
+          Github, Heroku and Vercel. We also worked with SCRUM methodology.
         </Text>
       </GridItem>
 
       <GridItem colSpan={2} align="right" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
-          In the app you can create a breed selecting some characteristics and a
-          photo. The new breed created is stored in the database. You can then
-          filter by API breeds or your own breeds.
+          In the app you can post a service, add a service to favourites, buy a
+          service and then rate it among other functions. As the Admin user you
+          can view all kind of statistics related to users and to the services
+          offered.
         </Text>
       </GridItem>
 

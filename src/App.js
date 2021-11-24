@@ -8,8 +8,8 @@ function App() {
     <div>
         <Name />
         <Works />
+        <AboutMe />
         <Footer />
-        {/* <AboutMe /> */}
     </div>
   );
 }
