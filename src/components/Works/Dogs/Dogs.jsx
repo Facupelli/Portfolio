@@ -1,7 +1,7 @@
 import { Image } from "@chakra-ui/image";
 import { Text, Grid, GridItem, Heading, Flex } from "@chakra-ui/layout";
 import React from "react";
-import { IconButton } from "@chakra-ui/react";
+import { IconButton, Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Dogs() {
@@ -12,12 +12,14 @@ export default function Dogs() {
           <Heading as="h5" size="md">
             THE DOG APP
           </Heading>
-          <IconButton
-            variant="text"
-            aria-label="external-link"
-            icon={<ExternalLinkIcon />}
-            ml="0.5%"
-          />
+          <Link href="https://pi-dogs-definitive.vercel.app/" isExternal>
+            <IconButton
+              variant="text"
+              aria-label="external-link"
+              icon={<ExternalLinkIcon />}
+              ml="0.5%"
+            />
+          </Link>
         </Flex>
       </GridItem>
 

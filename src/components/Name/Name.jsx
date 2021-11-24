@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, VStack, Heading, Box, Text } from "@chakra-ui/react";
+import ContactMe from "./ContactMe/ContactMe";
 
 export default function Name() {
   return (
@@ -29,7 +30,7 @@ export default function Name() {
         </Text>
       </Box>
       <Box mt='2%'>
-        <Button variant='outline' >Get In Touch</Button>
+        <ContactMe />
       </Box>
     </Box>
   );

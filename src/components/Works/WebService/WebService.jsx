@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Text, Grid, GridItem, Heading } from "@chakra-ui/layout";
+import { Text, Grid, GridItem, Heading, Link } from "@chakra-ui/layout";
 import React from "react";
 import { IconButton } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
@@ -13,12 +13,14 @@ export default function WebService() {
           <Heading as="h5" size="md" mr="0.5%">
             WebService
           </Heading>
-          <IconButton
-            variant="text"
-            aria-label="external-link"
-            icon={<ExternalLinkIcon />}
-            ml="0.5%"
-          />
+          <Link href="https://pf-web-service.vercel.app/" isExternal>
+            <IconButton
+              variant="text"
+              aria-label="external-link"
+              icon={<ExternalLinkIcon />}
+              ml="0.5%"
+            />
+          </Link>
         </Flex>
       </GridItem>
 
@@ -41,9 +43,9 @@ export default function WebService() {
         />
       </GridItem>
 
-      <GridItem colSpan={1} align="right">
+      <GridItem colSpan={2} align="right">
         <Image
-          w="300px"
+          w="530px"
           h="250px"
           objectFit="contain"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
@@ -51,7 +53,7 @@ export default function WebService() {
         />
       </GridItem>
 
-      <GridItem colSpan={1} align="right">
+      {/* <GridItem colSpan={1} align="right">
         <Image
           w="300px"
           h="250px"
@@ -59,7 +61,7 @@ export default function WebService() {
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_3_vd7kaj.png"
           alt="landing"
         />
-      </GridItem>
+      </GridItem> */}
 
       <GridItem colSpan={2} align="left" mt="auto" mb="auto">
         <Text fontSize="md" w="60%">
@@ -79,7 +81,7 @@ export default function WebService() {
         </Text>
       </GridItem>
 
-      <GridItem colSpan={1} align="cenleftter">
+      {/* <GridItem colSpan={1} align="cenleftter">
         <Image
           w="300px"
           h="250px"
@@ -87,11 +89,11 @@ export default function WebService() {
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_4_bm6mog.png"
           alt="landing"
         />
-      </GridItem>
+      </GridItem> */}
 
-      <GridItem colSpan={1} align="cenleftter">
+      <GridItem colSpan={2} align="cenleftter">
         <Image
-          w="300px"
+          w="530px"
           h="250px"
           objectFit="contain"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
