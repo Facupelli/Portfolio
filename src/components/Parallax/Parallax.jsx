@@ -13,7 +13,7 @@ const inlineStyle = {
 
 export default function ParallaxComponent() {
   return (
-    <div style={{ height: 550, marginBottom:'3%'}}>
+    <div style={{ height: 550}}>
       <Parallax bgImage={ image1 } strength={-200}>
         <div style={{ height: 550, }}>
           <div style={inlineStyle}>

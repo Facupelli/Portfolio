@@ -4,14 +4,14 @@ import { Button } from "@chakra-ui/button";
 
 export default function Footer() {
   return (
-    <Flex bg="purple.500" justify="center" mt="5%" pt="5%" pb="2%">
+    <Flex justify="center" pt="5%" pb="2%" bg='gray.900'>
       <Box>
         <Link
           href="https://www.linkedin.com/in/facundo-pellicer-full-stack-developer/"
           isExternal
         >
           <Button
-            color="purple.900"
+            color="cyan.200"
             variant="ghost"
           >
             Linkedin
@@ -20,12 +20,12 @@ export default function Footer() {
       </Box>
       <Box>
         <Link href="https://github.com/Facupelli" isExternal>
-          <Button color="purple.900" variant="ghost">Github</Button>
+          <Button color="cyan.200" variant="ghost">Github</Button>
         </Link>
       </Box>
       <Box>
         <Link href="https://www.instagram.com/facu_pellicer/" isExternal>
-          <Button color="purple.900" variant="ghost">Instagram</Button>
+          <Button color="cyan.200" variant="ghost">Instagram</Button>
         </Link>
       </Box>
     </Flex>
