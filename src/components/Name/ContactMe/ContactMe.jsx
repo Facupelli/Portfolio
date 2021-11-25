@@ -24,7 +24,7 @@ export default function ContactMe() {
 
   return (
     <>
-      <Button variant="outline" onClick={onOpen}>
+      <Button variant="solid" color='purple.900' onClick={onOpen}>
         Get In Touch
       </Button>
 

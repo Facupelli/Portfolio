@@ -6,10 +6,10 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
-        <Name />
-        <Works />
-        <AboutMe />
-        <Footer />
+      <Name />
+      <Works />
+      <AboutMe />
+      <Footer />
     </div>
   );
 }

@@ -24,10 +24,14 @@ export default function AboutMe() {
             and still learning everyday.
           </Text>
         </GridItem>
-        <GridItem colSpan={1} align="Left">
+        <GridItem colSpan={1} align="Left" mt="auto" mb="auto">
           <Image
             w="250px"
             h="270px"
+            borderRadius='5px'
+            border='3px solid #322659'
+            boxShadow='7px -7px 0 -3px white, 7px -7px #553C9A,
+            14px -14px 0 -3px white, 14px -14px #805AD5'
             objectFit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
             alt="landing"
