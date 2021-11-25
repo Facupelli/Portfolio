@@ -7,11 +7,11 @@ import { Flex } from "@chakra-ui/react";
 
 export default function WebService() {
   return (
-    <Grid templateColumns="repeat(4, 1fr)" gap={5}>
+    <Grid templateColumns="repeat(4, 1fr)" rowGap={5}  columnGap={10} >
       <GridItem colSpan={4}>
         <Flex justify="center" align="center">
           <Heading as="h5" size="md" mr="0.5%">
-            WebService
+            WEBSERVICE
           </Heading>
           <Link href="https://pf-web-service.vercel.app/" isExternal>
             <IconButton
@@ -37,7 +37,9 @@ export default function WebService() {
         <Image
           w="530px"
           h="300px"
-          objectFit="contain"
+          objectFit="cover"
+          borderRadius='10px'
+          boxShadow="md"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
           alt="landing"
         />
@@ -46,8 +48,10 @@ export default function WebService() {
       <GridItem colSpan={2} align="right">
         <Image
           w="530px"
-          h="250px"
-          objectFit="contain"
+          h="300px"
+          objectFit="cover"
+          borderRadius='10px'
+          boxShadow="md"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
           alt="landing"
         />
@@ -94,8 +98,10 @@ export default function WebService() {
       <GridItem colSpan={2} align="cenleftter">
         <Image
           w="530px"
-          h="250px"
-          objectFit="contain"
+          h="300px"
+          objectFit="cover"
+          borderRadius='10px'
+          boxShadow="md"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
           alt="landing"
         />

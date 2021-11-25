@@ -6,7 +6,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Dogs() {
   return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={5} mb="5%">
+    <Grid templateColumns="repeat(2, 1fr)" rowGap={5}  columnGap={10} mb="5%">
       <GridItem colSpan={2} align="center">
         <Flex justify="center" align="center">
           <Heading as="h5" size="md">
@@ -23,7 +23,7 @@ export default function Dogs() {
         </Flex>
       </GridItem>
 
-      <GridItem colSpan={1} align="right" mt="auto" mb="auto">
+      <GridItem colSpan={1} align="right" mt="auto" mb="auto" >
         <Text fontSize="md" w="60%">
           This was my first full stack experience at Henry Bootcamp. The Dogg
           App is a SPA (Single Page Application) that consumes data of an API
@@ -38,6 +38,8 @@ export default function Dogs() {
           w="530px"
           h="300px"
           objectFit="cover"
+          borderRadius='10px'
+          boxShadow="md"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
           alt="landing"
         />
@@ -48,6 +50,8 @@ export default function Dogs() {
           w="530px"
           h="300px"
           objectFit="cover"
+          borderRadius='10px'
+          boxShadow="md"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
           alt="landing"
         />
@@ -74,6 +78,8 @@ export default function Dogs() {
           w="530px"
           h="300px"
           objectFit="cover"
+          borderRadius='10px'
+          boxShadow="md"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
           alt="landing"
         />

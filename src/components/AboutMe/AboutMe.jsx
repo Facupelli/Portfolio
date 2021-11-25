@@ -4,8 +4,8 @@ import { Image } from "@chakra-ui/image";
 
 export default function AboutMe() {
   return (
-    <Box>
-      <Box ml="10%" mb="5%">
+    <Box mt='5%'>
+      <Box ml="10%">
         <Heading as="h4" size="lg">
           About Me
         </Heading>
