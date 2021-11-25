@@ -14,11 +14,7 @@ export default function Works() {
           <Heading as="h4" size="lg">
             Works
           </Heading>
-          <IconButton
-            variant="ghost"
-            aria-label="Search database"
-            icon={<TriangleDownIcon />}
-          />
+          <TriangleDownIcon ml='1%'/>
         </Flex>
       </Box>
 
