@@ -26,7 +26,7 @@ export default function WebService() {
       </GridItem>
 
       <GridItem colSpan={2} align="right" mt="auto" mb="auto">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce >
           <Text fontSize="md" w="60%">
             This was my last project at Henry Bootcamp, I worked with 7
             teammates both in the FRONT-END and BACK-END to create this app.
@@ -51,7 +51,7 @@ export default function WebService() {
       </GridItem>
 
       <GridItem colSpan={2} align="right">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <Image
             w="530px"
             h="300px"
@@ -75,7 +75,7 @@ export default function WebService() {
       </GridItem> */}
 
       <GridItem colSpan={2} align="left" mt="auto" mb="auto">
-        <Slide triggerOnce>
+        <Slide triggerOnce >
           <Text fontSize="md" w="60%">
             The technologies we used for this project were React, Redux,
             Material UI among other libraries for the FRONT-END, Node.js,
@@ -87,7 +87,7 @@ export default function WebService() {
       </GridItem>
 
       <GridItem colSpan={2} align="right" mt="auto" mb="auto">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce >
           <Text fontSize="md" w="60%">
             In the app you can post a service, add a service to favourites, buy
             a service and then rate it among other functions. As the Admin user
@@ -108,7 +108,7 @@ export default function WebService() {
       </GridItem> */}
 
       <GridItem colSpan={2} align="cenleftter">
-        <Slide triggerOnce>
+        <Slide triggerOnce >
           <Image
             w="530px"
             h="300px"

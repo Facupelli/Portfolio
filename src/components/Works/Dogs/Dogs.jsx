@@ -4,14 +4,7 @@ import React from "react";
 import { IconButton, Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
-  AttentionSeeker,
-  Bounce,
   Fade,
-  Hinge,
-  JackInTheBox,
-  Roll,
-  Rotate,
-  Slide,
   Zoom,
 } from "react-awesome-reveal";
 
@@ -37,7 +30,7 @@ export default function Dogs() {
       </GridItem>
 
       <GridItem colSpan={1} align="right" mt="auto" mb="auto">
-        <Zoom triggerOnce>
+        <Zoom delay={250} triggerOnce>
           <Text fontSize="md" w="60%">
             This was my first full stack experience at Henry Bootcamp. The Dogg
             App is a SPA (Single Page Application) that consumes data of an API
@@ -48,8 +41,8 @@ export default function Dogs() {
         </Zoom>
       </GridItem>
 
-      <GridItem colSpan={1} align="left">
-        <Zoom triggerOnce>
+      <GridItem  colSpan={1} align="left">
+        <Zoom delay={500} triggerOnce>
           <Image
             w="530px"
             h="300px"
@@ -63,7 +56,7 @@ export default function Dogs() {
       </GridItem>
 
       <GridItem colSpan={1} align="right">
-        <Zoom triggerOnce>
+        <Zoom delay={500} triggerOnce>
           <Image
             w="530px"
             h="300px"
@@ -77,7 +70,7 @@ export default function Dogs() {
       </GridItem>
 
       <GridItem colSpan={1} align="left" mt="auto" mb="auto">
-        <Zoom triggerOnce>
+        <Zoom delay={250} triggerOnce>
           <Text fontSize="md" w="60%">
             The technologies I used for this project were React, Redux and pure
             CSS for the FRONT-END, Node.js, Express, Sequelize and PSQL for the
@@ -87,7 +80,7 @@ export default function Dogs() {
       </GridItem>
 
       <GridItem colSpan={1} align="right" mt="auto" mb="auto">
-        <Zoom triggerOnce>
+        <Zoom delay={250} triggerOnce>
           <Text fontSize="md" w="60%">
             In the app you can create a breed selecting some characteristics and
             a photo. The new breed created is stored in the database. You can
@@ -97,7 +90,7 @@ export default function Dogs() {
       </GridItem>
 
       <GridItem colSpan={1} align="cenleftter">
-        <Zoom triggerOnce>
+        <Zoom delay={500} triggerOnce>
           <Image
             w="530px"
             h="300px"
