@@ -3,7 +3,6 @@ import React from "react";
 import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
 import { TriangleDownIcon } from "@chakra-ui/icons";
-import { IconButton } from "@chakra-ui/button";
 
 
 export default function Works() {

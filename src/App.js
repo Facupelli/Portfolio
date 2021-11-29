@@ -1,4 +1,3 @@
-import Name from "./components/Name/Name";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Works from "./components/Works/Works";
 import Footer from "./components/Footer/Footer";
@@ -9,7 +8,6 @@ function App() {
   return (
     <div>
       <ParallaxComponent />
-      {/* <Name /> */}
       <Works />
       <Fade duration={1500} triggerOnce>
         <AboutMe />

@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, Heading, Box, Text } from "@chakra-ui/react";
+import {  Heading, Box, Text } from "@chakra-ui/react";
 import ContactMe from "./ContactMe/ContactMe";
 
 export default function Name() {

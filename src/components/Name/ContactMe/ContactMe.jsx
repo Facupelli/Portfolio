@@ -13,7 +13,6 @@ import {
   FormLabel,
   Textarea,
   Input,
-  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 

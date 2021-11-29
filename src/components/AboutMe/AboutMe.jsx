@@ -30,8 +30,8 @@ export default function AboutMe() {
             h="270px"
             borderRadius='5px'
             border='3px solid #1A202C'
-            boxShadow='7px -7px 0 -3px #2D3748, 7px -7px #4A5568,
-            14px -14px 0 -3px #2D3748, 14px -14px #CBD5E0'
+            boxShadow="7px -7px 0 -3px #2D3748, 7px -7px #9DECF9,
+            14px -14px 0 -3px #2D3748, 14px -14px #ED64A6"
             objectFit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
             alt="landing"

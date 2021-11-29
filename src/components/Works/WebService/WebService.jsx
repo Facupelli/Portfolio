@@ -4,7 +4,7 @@ import React from "react";
 import { IconButton } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Flex } from "@chakra-ui/react";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 export default function WebService() {
   return (

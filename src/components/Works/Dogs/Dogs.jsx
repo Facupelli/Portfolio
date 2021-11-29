@@ -3,7 +3,7 @@ import { Text, Grid, GridItem, Heading, Flex, Box } from "@chakra-ui/layout";
 import React from "react";
 import { IconButton, Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Dogs() {
   return (
