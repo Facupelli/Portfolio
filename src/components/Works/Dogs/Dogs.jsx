@@ -3,12 +3,12 @@ import { Text, Grid, GridItem, Heading, Flex, Box } from "@chakra-ui/layout";
 import React from "react";
 import { IconButton, Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 export default function Dogs() {
   return (
     <Grid templateColumns="repeat(2, 1fr)" rowGap={5} columnGap={10} mb="5%">
-      <GridItem colSpan={2} align="center" pb='3%'>
+      <GridItem colSpan={2} align="center" pb="3%">
         <Flex justify="center" align="center">
           <Fade triggerOnce>
             <Heading as="h5" size="md" color="purple.300">
@@ -34,7 +34,7 @@ export default function Dogs() {
         borderRadius="10px"
         bg="violet.200"
       >
-        <Zoom delay={250} triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <Box bg="gray.700" p="5%" borderRadius="5px">
             <Text fontSize="lg" w="70%" color="gray.100">
               This was my first full stack experience at Henry Bootcamp. The
@@ -44,11 +44,11 @@ export default function Dogs() {
               them by weight or alphabetically.
             </Text>
           </Box>
-        </Zoom>
+        </Slide>
       </GridItem>
 
       <GridItem colSpan={1} align="left">
-        <Zoom delay={500} triggerOnce>
+        <Slide triggerOnce>
           <Box>
             <Image
               w="530px"
@@ -61,11 +61,11 @@ export default function Dogs() {
               alt="landing"
             />
           </Box>
-        </Zoom>
+        </Slide>
       </GridItem>
 
       <GridItem colSpan={1} align="right">
-        <Zoom delay={500} triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <Box>
             <Image
               w="530px"
@@ -78,11 +78,11 @@ export default function Dogs() {
               alt="landing"
             />
           </Box>
-        </Zoom>
+        </Slide>
       </GridItem>
 
       <GridItem colSpan={1} align="left" mt="auto" mb="auto">
-        <Zoom delay={250} triggerOnce>
+        <Slide triggerOnce>
           <Box bg="gray.700" p="5%" borderRadius="5px">
             <Text fontSize="lg" w="70%" color="gray.100">
               The technologies I used for this project were React, Redux and
@@ -91,11 +91,11 @@ export default function Dogs() {
               Vercel.
             </Text>
           </Box>
-        </Zoom>
+        </Slide>
       </GridItem>
 
       <GridItem colSpan={1} align="right" mt="auto" mb="auto">
-        <Zoom delay={250} triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <Box bg="gray.700" p="5%" borderRadius="5px">
             <Text fontSize="lg" w="70%" color="gray.100">
               You can create a breed selecting some characteristics and a photo.
@@ -103,11 +103,11 @@ export default function Dogs() {
               filter by API breeds or your own breeds.
             </Text>
           </Box>
-        </Zoom>
+        </Slide>
       </GridItem>
 
       <GridItem colSpan={1} align="cenleftter">
-        <Zoom delay={500} triggerOnce>
+        <Slide triggerOnce>
           <Image
             w="530px"
             h="300px"
@@ -118,7 +118,7 @@ export default function Dogs() {
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
             alt="landing"
           />
-        </Zoom>
+        </Slide>
       </GridItem>
     </Grid>
   );
