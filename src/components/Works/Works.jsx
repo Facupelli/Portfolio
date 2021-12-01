@@ -3,6 +3,9 @@ import React from "react";
 import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
 import { TriangleDownIcon } from "@chakra-ui/icons";
+import Love from "../Quotes/Love";
+import Matters from "../Quotes/Matters";
+
 
 
 export default function Works() {
@@ -19,8 +22,10 @@ export default function Works() {
 
       <Box>
         <Dogs />
-
+        <Love />
         <WebService />
+        <Matters />
+        
       </Box>
 
       
