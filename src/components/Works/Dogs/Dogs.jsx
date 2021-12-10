@@ -10,14 +10,12 @@ export default function Dogs() {
             <h5 as="h5" size="md" color="purple.300">
               THE DOG APP
             </h5>
-            <link href="https://pi-dogs-definitive.vercel.app/" isExternal>
               <button
                 variant="text"
-                aria-label="external-link"
-                icon={<ExternalLinkIcon />}
+                aria-label="external-Link"
                 ml="0.5%"
               />
-            </link>
+
           </Fade>
         </div>
       </div>

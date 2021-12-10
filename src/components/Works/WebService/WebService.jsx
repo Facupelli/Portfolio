@@ -9,14 +9,11 @@ export default function WebService() {
           <h5 as="h5" size="md" mr="0.5%" color="purple.300">
             WEBSERVICE
           </h5>
-          <link href="https://pf-web-service.vercel.app/" isExternal>
             <button
               variant="text"
               aria-label="external-link"
-              icon={<ExternalLinkIcon />}
               ml="0.5%"
             />
-          </link>
         </div>
       </div>
 
