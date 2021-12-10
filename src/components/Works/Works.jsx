@@ -1,8 +1,6 @@
-import { Box, Flex, Heading } from "@chakra-ui/layout";
 import React from "react";
 import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
-import { TriangleDownIcon } from "@chakra-ui/icons";
 import Love from "../Quotes/Love";
 import Matters from "../Quotes/Matters";
 
@@ -10,25 +8,24 @@ import Matters from "../Quotes/Matters";
 
 export default function Works() {
   return (
-    <Box pt='3%' bg='gray.800'>
-      <Box ml="10%" mb="5%">
-        <Flex align="baseline">
-          <Heading as="h4" size="lg" color='gray.300'>
+    <div pt='3%' bg='gray.800'>
+      <div ml="10%" mb="5%">
+        <div align="baseline">
+          <h4 as="h4" size="lg" color='gray.300'>
             Works
-          </Heading>
-          <TriangleDownIcon ml='1%' color='gray.300'/>
-        </Flex>
-      </Box>
+          </h4>
+        </div>
+      </div>
 
-      <Box>
+      <div>
         <Dogs />
         <Love />
         <WebService />
         <Matters />
         
-      </Box>
+      </div>
 
       
-    </Box>
+    </div>
   );
 }

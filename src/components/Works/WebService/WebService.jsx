@@ -1,46 +1,41 @@
-import { Image } from "@chakra-ui/image";
-import { Text, Grid, GridItem, Heading, Link, Box } from "@chakra-ui/layout";
 import React from "react";
-import { IconButton } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Flex } from "@chakra-ui/react";
 import { Slide } from "react-awesome-reveal";
 
 export default function WebService() {
   return (
-    <Grid templateColumns="repeat(4, 1fr)" rowGap={5} columnGap={10} pb="5%">
-      <GridItem colSpan={4} pb='3%'>
-        <Flex justify="center" align="center">
-          <Heading as="h5" size="md" mr="0.5%" color="purple.300">
+    <div templateColumns="repeat(4, 1fr)" rowGap={5} columnGap={10} pb="5%">
+      <div colSpan={4} pb='3%'>
+        <div justify="center" align="center">
+          <h5 as="h5" size="md" mr="0.5%" color="purple.300">
             WEBSERVICE
-          </Heading>
-          <Link href="https://pf-web-service.vercel.app/" isExternal>
-            <IconButton
+          </h5>
+          <link href="https://pf-web-service.vercel.app/" isExternal>
+            <button
               variant="text"
               aria-label="external-link"
               icon={<ExternalLinkIcon />}
               ml="0.5%"
             />
-          </Link>
-        </Flex>
-      </GridItem>
+          </link>
+        </div>
+      </div>
 
-      <GridItem colSpan={2} align="right" mt="auto" mb="auto">
+      <div colSpan={2} align="right" mt="auto" mb="auto">
         <Slide duration={1500} triggerOnce>
-          <Box bg="gray.700" p="5%" borderRadius="5px">
-            <Text fontSize="lg" w="60%" color="gray.100">
+          <div bg="gray.700" p="5%" borderRadius="5px">
+            <p fontSize="lg" w="60%" color="gray.100">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
               WebService is a service e-commerce where you can offer or buy a
               service.
-            </Text>
-          </Box>
+            </p>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={2} align="left">
+      <div colSpan={2} align="left">
         <Slide triggerOnce>
-          <Image
+          <image
             w="530px"
             h="300px"
             objectFit="cover"
@@ -51,11 +46,11 @@ export default function WebService() {
             alt="landing"
           />
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={2} align="right">
+      <div colSpan={2} align="right">
         <Slide duration={1500} triggerOnce>
-          <Image
+          <image
             w="530px"
             h="300px"
             objectFit="cover"
@@ -66,7 +61,7 @@ export default function WebService() {
             alt="landing"
           />
         </Slide>
-      </GridItem>
+      </div>
 
       {/* <GridItem colSpan={1} align="right">
         <Image
@@ -78,32 +73,32 @@ export default function WebService() {
         />
       </GridItem> */}
 
-      <GridItem colSpan={2} align="left" mt="auto" mb="auto">
+      <div colSpan={2} align="left" mt="auto" mb="auto">
         <Slide triggerOnce>
-          <Box bg="gray.700" p="5%" borderRadius="5px">
-            <Text fontSize="lg" w="60%" color="gray.100">
+          <div bg="gray.700" p="5%" borderRadius="5px">
+            <p fontSize="lg" w="60%" color="gray.100">
               The technologies we used for this project were React, Redux,
               Material UI among other libraries for the FRONT-END. Node.js,
               Express, Sequelize and PSQL for the BACK-END. Other tools we used
               were Git, Github, Heroku and Vercel. We also worked with SCRUM
               methodology.
-            </Text>
-          </Box>
+            </p>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={2} align="right" mt="auto" mb="auto">
+      <div colSpan={2} align="right" mt="auto" mb="auto">
         <Slide duration={1500} triggerOnce>
-          <Box bg="gray.700" p="5%" borderRadius="5px">
-            <Text fontSize="lg" w="60%" color="gray.100">
+          <div bg="gray.700" p="5%" borderRadius="5px">
+            <p fontSize="lg" w="60%" color="gray.100">
               In the app you can post a service, add a service to favourites,
               buy a service and then rate it among other functions. As the Admin
               user you can view all kind of statistics related to users and to
               the services offered.
-            </Text>
-          </Box>
+            </p>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
       {/* <GridItem colSpan={1} align="cenleftter">
         <Image
@@ -115,9 +110,9 @@ export default function WebService() {
         />
       </GridItem> */}
 
-      <GridItem colSpan={2} align="cenleftter">
+      <div colSpan={2} align="cenleftter">
         <Slide triggerOnce>
-          <Image
+          <image
             w="530px"
             h="300px"
             objectFit="cover"
@@ -128,7 +123,7 @@ export default function WebService() {
             alt="landing"
           />
         </Slide>
-      </GridItem>
-    </Grid>
+      </div>
+    </div>
   );
 }

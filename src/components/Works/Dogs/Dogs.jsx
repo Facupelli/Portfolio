@@ -1,32 +1,28 @@
-import { Image } from "@chakra-ui/image";
-import { Text, Grid, GridItem, Heading, Flex, Box } from "@chakra-ui/layout";
 import React from "react";
-import { IconButton, Link } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Dogs() {
   return (
-    <Grid templateColumns="repeat(2, 1fr)" rowGap={5} columnGap={10} mb="5%">
-      <GridItem colSpan={2} align="center" pb="3%">
-        <Flex justify="center" align="center">
+    <div templateColumns="repeat(2, 1fr)" rowGap={5} columnGap={10} mb="5%">
+      <div colSpan={2} align="center" pb="3%">
+        <div justify="center" align="center">
           <Fade triggerOnce>
-            <Heading as="h5" size="md" color="purple.300">
+            <h5 as="h5" size="md" color="purple.300">
               THE DOG APP
-            </Heading>
-            <Link href="https://pi-dogs-definitive.vercel.app/" isExternal>
-              <IconButton
+            </h5>
+            <link href="https://pi-dogs-definitive.vercel.app/" isExternal>
+              <button
                 variant="text"
                 aria-label="external-link"
                 icon={<ExternalLinkIcon />}
                 ml="0.5%"
               />
-            </Link>
+            </link>
           </Fade>
-        </Flex>
-      </GridItem>
+        </div>
+      </div>
 
-      <GridItem
+      <div
         colSpan={1}
         align="right"
         mt="auto"
@@ -35,22 +31,22 @@ export default function Dogs() {
         bg="violet.200"
       >
         <Slide duration={1500} triggerOnce>
-          <Box bg="gray.700" p="5%" borderRadius="5px">
-            <Text fontSize="lg" w="70%" color="gray.100">
+          <div bg="gray.700" p="5%" borderRadius="5px">
+            <p fontSize="lg" w="70%" color="gray.100">
               This was my first full stack experience at Henry Bootcamp. The
               Dogg App is a SPA (Single Page Application) that consumes data of
               an API (The Dog API). In the app you can find all dogs breeds,
               search breeds by name, filter breeds by temperaments and order
               them by weight or alphabetically.
-            </Text>
-          </Box>
+            </p>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={1} align="left">
+      <div colSpan={1} align="left">
         <Slide triggerOnce>
-          <Box>
-            <Image
+          <div>
+            <image
               w="530px"
               h="300px"
               objectFit="cover"
@@ -60,14 +56,14 @@ export default function Dogs() {
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
               alt="landing"
             />
-          </Box>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={1} align="right">
+      <div colSpan={1} align="right">
         <Slide duration={1500} triggerOnce>
-          <Box>
-            <Image
+          <div>
+            <image
               w="530px"
               h="300px"
               objectFit="cover"
@@ -77,38 +73,38 @@ export default function Dogs() {
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
               alt="landing"
             />
-          </Box>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={1} align="left" mt="auto" mb="auto">
+      <div colSpan={1} align="left" mt="auto" mb="auto">
         <Slide triggerOnce>
-          <Box bg="gray.700" p="5%" borderRadius="5px">
-            <Text fontSize="lg" w="70%" color="gray.100">
+          <div bg="gray.700" p="5%" borderRadius="5px">
+            <p fontSize="lg" w="70%" color="gray.100">
               The technologies I used for this project were React, Redux and
               pure CSS for the FRONT-END. Node.js, Express, Sequelize and PSQL
               for the BACK-END. Other tools I used were Git, Github, Heroku and
               Vercel.
-            </Text>
-          </Box>
+            </p>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={1} align="right" mt="auto" mb="auto">
+      <div colSpan={1} align="right" mt="auto" mb="auto">
         <Slide duration={1500} triggerOnce>
-          <Box bg="gray.700" p="5%" borderRadius="5px">
-            <Text fontSize="lg" w="70%" color="gray.100">
+          <div bg="gray.700" p="5%" borderRadius="5px">
+            <p fontSize="lg" w="70%" color="gray.100">
               You can create a breed selecting some characteristics and a photo.
               The new breed created is stored in the database. You can then
               filter by API breeds or your own breeds.
-            </Text>
-          </Box>
+            </p>
+          </div>
         </Slide>
-      </GridItem>
+      </div>
 
-      <GridItem colSpan={1} align="cenleftter">
+      <div colSpan={1} align="cenleftter">
         <Slide triggerOnce>
-          <Image
+          <image
             w="530px"
             h="300px"
             objectFit="cover"
@@ -119,7 +115,7 @@ export default function Dogs() {
             alt="landing"
           />
         </Slide>
-      </GridItem>
-    </Grid>
+      </div>
+    </div>
   );
 }
