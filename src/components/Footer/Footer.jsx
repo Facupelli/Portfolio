@@ -7,6 +7,7 @@ export default function Footer() {
         <a
           className="text-lg text-cyan-200 font-bold font-body transition duration-200 hover:text-pink-500"
           href="https://www.linkedin.com/in/facundo-pellicer-full-stack-developer/"
+          target="_blank"
         >
           Linkedin
         </a>
@@ -15,6 +16,7 @@ export default function Footer() {
         <a
           className="text-lg text-cyan-200 font-bold font-body transition duration-200 hover:text-pink-500"
           href="https://github.com/Facupelli"
+          target="_blank"
         >
           Github
         </a>
@@ -23,6 +25,7 @@ export default function Footer() {
         <a
           className="text-lg text-cyan-200 font-bold font-bod transition duration-200 hover:text-pink-500"
           href="https://www.instagram.com/facu_pellicer/"
+          target="_blank"
         >
           Instagram
         </a>

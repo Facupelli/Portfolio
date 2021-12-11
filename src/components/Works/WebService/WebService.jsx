@@ -1,7 +1,8 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
-import { ArrowUpIcon } from "@heroicons/react/solid";
-import s from './WebService.module.css';
+import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
+import s from "./WebService.module.css";
+import github from "../../../Media/github.png";
 
 export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
   const handleOnClick = () => {
@@ -10,13 +11,20 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
   return (
     <div className="grid pb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2 flex justify-center gap-2 items-center" align="center">
+      <div
+        className="col-span-2 flex justify-center  gap-4 items-center"
+        align="center"
+      >
         <Fade triggerOnce>
-          <p className="text-2xl font-semibold text-pink-400">
-            WEBSERVICE
-          </p>
+          <p className="text-2xl font-semibold text-pink-400">WEBSERVICE</p>
+          <a href='https://pf-web-service.vercel.app/' target="_blank">
+            <LinkIcon className="h-6 w-6 text-pink-400" />
+          </a>
+          <a href="https://github.com/Facupelli/PF-WebService" target="_blank">
+            <img src={github} alt="github" className="h-6 w-6 fill-pink-400" />
+          </a>
           <button onClick={handleOnClick}>
-            <ArrowUpIcon className="h-6 w-6 text-pink-400" />
+            <ArrowUpIcon className="h-6 w-6 ml-6 text-pink-400" />
           </button>
         </Fade>
       </div>
@@ -25,7 +33,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
           <div className="p-8">
-            <p className="w-3/4 text-white">
+            <p className="w-3/4 text-white font-body">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
               WebService is a service e-commerce where you can offer or buy a
@@ -71,7 +79,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div align="left" className="mt-auto mb-auto">
         <Slide triggerOnce>
           <div className="p-8">
-            <p className="w-3/4 text-white">
+            <p className="w-3/4 text-white font-body">
               The technologies we used for this project were React, Redux,
               Material UI among other libraries for the FRONT-END. Node.js,
               Express, Sequelize and PSQL for the BACK-END. Other tools we used
@@ -86,7 +94,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
           <div className="p-8">
-            <p className="w-3/4 text-white">
+            <p className="w-3/4 text-white font-body">
               In the app you can post a service, add a service to favourites,
               buy a service and then rate it among other functions. As the Admin
               user you can view all kind of statistics related to users and to

@@ -1,7 +1,9 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
-import { ArrowUpIcon } from "@heroicons/react/solid";
+import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
 import s from "./Dogs.module.css";
+import github from "../../../Media/github.png";
+
 
 export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   const handleOnClick = () => {
@@ -11,13 +13,19 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   return (
     <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2 flex justify-center gap-2 items-center" align="center">
+      <div className="col-span-2 flex justify-center items-center gap-2 " align="center">
         <Fade triggerOnce>
           <p className="text-2xl font-semibold text-pink-400" color="purple.300">
             THE DOG APP
           </p>
+          <a href='https://pi-dogs-definitive.vercel.app/' target="_blank" className="">
+            <LinkIcon className="h-6 w-6 text-pink-400 " />
+          </a>
+          <a href="https://github.com/Facupelli/PI-Dogs" target="_blank">
+            <img src={github} alt="github" className="h-6 w-6 fill-pink-400" />
+          </a>
           <button onClick={handleOnClick}>
-            <ArrowUpIcon className="h-6 w-6 text-pink-400" />
+            <ArrowUpIcon className="h-6 w-6 ml-6 text-pink-400" />
           </button>
         </Fade>
       </div>
@@ -26,7 +34,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
           <div className="p-8">
-            <p className="w-3/4 text-white">
+            <p className="w-3/4 text-white font-body">
               This was my first full stack experience at Henry Bootcamp. The
               Dogg App is a SPA (Single Page Application) that consumes data of
               an API (The Dog API). In the app you can find all dogs breeds,
@@ -68,7 +76,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       <div className="mt-auto mb-auto" align="left">
         <Slide triggerOnce>
           <div className="p-8">
-            <p className="w-3/4 text-white">
+            <p className="w-3/4 text-white font-body">
               The technologies I used for this project were React, Redux and
               pure CSS for the FRONT-END. Node.js, Express, Sequelize and PSQL
               for the BACK-END. Other tools I used were Git, Github, Heroku and
@@ -82,7 +90,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       <div className="mt-auto mb-auto" align="right">
         <Slide duration={1500} triggerOnce>
           <div className="p-8">
-            <p className="w-3/4 text-white">
+            <p className="w-3/4 text-white font-body">
               You can create a breed selecting some characteristics and a photo.
               The new breed created is stored in the database. You can then
               filter by API breeds or your own breeds.
