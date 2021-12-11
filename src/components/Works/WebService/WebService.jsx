@@ -8,15 +8,15 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
     setSeeMoreWeb(!seeMoreWeb);
   };
   return (
-    <div className="grid mb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
+    <div className="grid pb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div className="col-span-2 flex justify-center gap-2 items-center" align="center">
         <Fade triggerOnce>
-          <p className="text-2xl font-semibold" color="purple.300">
+          <p className="text-2xl font-semibold text-pink-400">
             WEBSERVICE
           </p>
           <button onClick={handleOnClick}>
-            <ArrowUpIcon className="h-5 w-5 text-cyan-500" />
+            <ArrowUpIcon className="h-6 w-6 text-pink-400" />
           </button>
         </Fade>
       </div>
@@ -25,7 +25,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
           <div className="p-8">
-            <p className="w-3/4">
+            <p className="w-3/4 text-white">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
               WebService is a service e-commerce where you can offer or buy a
@@ -71,7 +71,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div align="left" className="mt-auto mb-auto">
         <Slide triggerOnce>
           <div className="p-8">
-            <p className="w-3/4">
+            <p className="w-3/4 text-white">
               The technologies we used for this project were React, Redux,
               Material UI among other libraries for the FRONT-END. Node.js,
               Express, Sequelize and PSQL for the BACK-END. Other tools we used
@@ -86,7 +86,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
           <div className="p-8">
-            <p className="w-3/4">
+            <p className="w-3/4 text-white">
               In the app you can post a service, add a service to favourites,
               buy a service and then rate it among other functions. As the Admin
               user you can view all kind of statistics related to users and to

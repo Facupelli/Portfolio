@@ -33,9 +33,9 @@ export default function Works() {
   };
 
   return (
-    <div>
-      <div className="ml-28 my-14">
-        <h1 className="font-semibold text-3xl ">Works</h1>
+    <div className="bg-gray-800">
+      <div className="pl-28 py-16">
+        <h1 className="font-semibold text-3xl text-white underline">Works</h1>
       </div>
 
       <div>

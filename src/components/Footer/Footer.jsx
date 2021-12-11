@@ -2,19 +2,19 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className='flex justify-center gap-12 my-12'>
+    <div className="flex justify-center gap-12 py-12 bg-gray-900">
       <div>
-        <button color="cyan.200" variant="ghost">
+        <button className="text-lg text-cyan-200 font-bold font-body">
           Linkedin
         </button>
       </div>
       <div>
-        <button color="cyan.200" variant="ghost">
+        <button className="text-lg text-cyan-200 font-bold font-body">
           Github
         </button>
       </div>
       <div>
-        <button color="cyan.200" variant="ghost">
+        <button className="text-lg text-cyan-200 font-bold font-bod">
           Instagram
         </button>
       </div>

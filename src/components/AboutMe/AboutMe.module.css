@@ -1,0 +1,6 @@
+.img {
+  width: 25%;
+  border-radius: 5px;
+  box-shadow: 7px -7px 0 -3px #2d3748, 7px -7px #9decf9,
+    14px -14px 0 -3px #2d3748, 14px -14px #ed64a6;
+}
