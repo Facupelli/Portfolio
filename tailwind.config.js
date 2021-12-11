@@ -5,6 +5,10 @@ module.exports = {
       spacing: {
         "35%": "35%",
       },
+      fontFamily: {
+        body: ["Lato"],
+        title: ["Merriweather"],
+      },
     },
   },
   plugins: [],
