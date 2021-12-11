@@ -35,7 +35,7 @@ export default function Works() {
   return (
     <div className="bg-gray-800">
       <div className="pl-28 py-16">
-        <h1 className="font-semibold text-3xl text-white underline">Works</h1>
+        <h1 className="font-semibold text-3xl text-white">Works</h1>
       </div>
 
       <div>
@@ -64,7 +64,7 @@ export default function Works() {
         )}
       </div>
 
-      <div className="mt-20">
+      <div className="pt-20">
         {!seeMoreWeb && (
           <div className="flex justify-center ">
             <div
@@ -84,7 +84,7 @@ export default function Works() {
         )}
       </div>
 
-      <div className="mt-20">
+      <div className="pt-20">
         {seeMoreWeb && (
           <WebService setSeeMoreWeb={setSeeMoreWeb} seeMoreWeb={seeMoreWeb} />
         )}

@@ -3,9 +3,9 @@ import s from "./AboutMe.module.css";
 
 export default function AboutMe() {
   return (
-    <div className="py-16 bg-gray-700">
+    <div className="py-16 bg-gray-900">
       <div className="ml-28 pb-16 ">
-        <p className="font-semibold text-3xl text-white underline">About Me</p>
+        <p className="font-semibold text-3xl text-white ">About Me</p>
       </div>
 
       <div className="flex justify-center items-center	 gap-16 px-40">

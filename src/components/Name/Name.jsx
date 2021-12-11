@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function Name() {
   return (
     <div className='pl-28 pt-14'>

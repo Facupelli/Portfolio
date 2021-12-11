@@ -2,21 +2,30 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex justify-center gap-12 py-12 bg-gray-900">
+    <div className="flex justify-center gap-24 py-12 bg-gray-900">
       <div>
-        <button className="text-lg text-cyan-200 font-bold font-body">
+        <a
+          className="text-lg text-cyan-200 font-bold font-body transition duration-200 hover:text-pink-500"
+          href="https://www.linkedin.com/in/facundo-pellicer-full-stack-developer/"
+        >
           Linkedin
-        </button>
+        </a>
       </div>
       <div>
-        <button className="text-lg text-cyan-200 font-bold font-body">
+        <a
+          className="text-lg text-cyan-200 font-bold font-body transition duration-200 hover:text-pink-500"
+          href="https://github.com/Facupelli"
+        >
           Github
-        </button>
+        </a>
       </div>
       <div>
-        <button className="text-lg text-cyan-200 font-bold font-bod">
+        <a
+          className="text-lg text-cyan-200 font-bold font-bod transition duration-200 hover:text-pink-500"
+          href="https://www.instagram.com/facu_pellicer/"
+        >
           Instagram
-        </button>
+        </a>
       </div>
     </div>
   );
