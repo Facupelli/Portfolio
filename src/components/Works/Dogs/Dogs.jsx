@@ -3,34 +3,22 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Dogs() {
   return (
-    <div templateColumns="repeat(2, 1fr)" rowGap={5} columnGap={10} mb="5%">
-      <div colSpan={2} align="center" pb="3%">
-        <div justify="center" align="center">
-          <Fade triggerOnce>
-            <h5 as="h5" size="md" color="purple.300">
-              THE DOG APP
-            </h5>
-              <button
-                variant="text"
-                aria-label="external-Link"
-                ml="0.5%"
-              />
-
-          </Fade>
-        </div>
+    <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
+      {/* ------------------------------------- TITULO --------------------------------------------- */}
+      <div className="col-span-2" align="center">
+        <Fade triggerOnce>
+          <p className="text-base font-semibold" color="purple.300">
+            THE DOG APP
+          </p>
+          <button aria-label="external-Link" />
+        </Fade>
       </div>
 
-      <div
-        colSpan={1}
-        align="right"
-        mt="auto"
-        mb="auto"
-        borderRadius="10px"
-        bg="violet.200"
-      >
+      {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
+      <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
-          <div bg="gray.700" p="5%" borderRadius="5px">
-            <p fontSize="lg" w="70%" color="gray.100">
+          <div className="p-8">
+            <p className="w-3/4">
               This was my first full stack experience at Henry Bootcamp. The
               Dogg App is a SPA (Single Page Application) that consumes data of
               an API (The Dog API). In the app you can find all dogs breeds,
@@ -44,7 +32,8 @@ export default function Dogs() {
       <div colSpan={1} align="left">
         <Slide triggerOnce>
           <div>
-            <image
+            <img
+              className="w-3/4 "
               w="530px"
               h="300px"
               objectFit="cover"
@@ -58,10 +47,12 @@ export default function Dogs() {
         </Slide>
       </div>
 
+      {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
       <div colSpan={1} align="right">
         <Slide duration={1500} triggerOnce>
           <div>
-            <image
+            <img
+              className="w-3/4 "
               w="530px"
               h="300px"
               objectFit="cover"
@@ -75,10 +66,10 @@ export default function Dogs() {
         </Slide>
       </div>
 
-      <div colSpan={1} align="left" mt="auto" mb="auto">
+      <div className="mt-auto mb-auto" align="left">
         <Slide triggerOnce>
-          <div bg="gray.700" p="5%" borderRadius="5px">
-            <p fontSize="lg" w="70%" color="gray.100">
+          <div className="p-8">
+            <p className="w-3/4">
               The technologies I used for this project were React, Redux and
               pure CSS for the FRONT-END. Node.js, Express, Sequelize and PSQL
               for the BACK-END. Other tools I used were Git, Github, Heroku and
@@ -88,10 +79,11 @@ export default function Dogs() {
         </Slide>
       </div>
 
-      <div colSpan={1} align="right" mt="auto" mb="auto">
+      {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
+      <div className="mt-auto mb-auto" align="right">
         <Slide duration={1500} triggerOnce>
-          <div bg="gray.700" p="5%" borderRadius="5px">
-            <p fontSize="lg" w="70%" color="gray.100">
+          <div className="p-8">
+            <p className="w-3/4">
               You can create a breed selecting some characteristics and a photo.
               The new breed created is stored in the database. You can then
               filter by API breeds or your own breeds.
@@ -100,9 +92,10 @@ export default function Dogs() {
         </Slide>
       </div>
 
-      <div colSpan={1} align="cenleftter">
+      <div>
         <Slide triggerOnce>
-          <image
+          <img
+            className="w-3/4 "
             w="530px"
             h="300px"
             objectFit="cover"

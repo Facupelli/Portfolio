@@ -1,26 +1,24 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function WebService() {
   return (
-    <div templateColumns="repeat(4, 1fr)" rowGap={5} columnGap={10} pb="5%">
-      <div colSpan={4} pb='3%'>
-        <div justify="center" align="center">
-          <h5 as="h5" size="md" mr="0.5%" color="purple.300">
+    <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
+      {/* ------------------------------------- TITULO --------------------------------------------- */}
+      <div className="col-span-2" align="center">
+        <Fade triggerOnce>
+          <p className="text-base font-semibold" color="purple.300">
             WEBSERVICE
-          </h5>
-            <button
-              variant="text"
-              aria-label="external-link"
-              ml="0.5%"
-            />
-        </div>
+          </p>
+          <button aria-label="external-link" />
+        </Fade>
       </div>
 
-      <div colSpan={2} align="right" mt="auto" mb="auto">
+      {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
+      <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
-          <div bg="gray.700" p="5%" borderRadius="5px">
-            <p fontSize="lg" w="60%" color="gray.100">
+          <div className="p-8">
+            <p className="w-3/4">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
               WebService is a service e-commerce where you can offer or buy a
@@ -32,7 +30,8 @@ export default function WebService() {
 
       <div colSpan={2} align="left">
         <Slide triggerOnce>
-          <image
+          <img
+            className="w-3/4 "
             w="530px"
             h="300px"
             objectFit="cover"
@@ -45,9 +44,11 @@ export default function WebService() {
         </Slide>
       </div>
 
+      {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
       <div colSpan={2} align="right">
         <Slide duration={1500} triggerOnce>
-          <image
+          <img
+            className="w-3/4 "
             w="530px"
             h="300px"
             objectFit="cover"
@@ -70,10 +71,10 @@ export default function WebService() {
         />
       </GridItem> */}
 
-      <div colSpan={2} align="left" mt="auto" mb="auto">
+      <div align="left" className="mt-auto mb-auto">
         <Slide triggerOnce>
-          <div bg="gray.700" p="5%" borderRadius="5px">
-            <p fontSize="lg" w="60%" color="gray.100">
+          <div className="p-8">
+            <p className="w-3/4">
               The technologies we used for this project were React, Redux,
               Material UI among other libraries for the FRONT-END. Node.js,
               Express, Sequelize and PSQL for the BACK-END. Other tools we used
@@ -84,10 +85,11 @@ export default function WebService() {
         </Slide>
       </div>
 
-      <div colSpan={2} align="right" mt="auto" mb="auto">
+      {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
+      <div align="right" className="mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
-          <div bg="gray.700" p="5%" borderRadius="5px">
-            <p fontSize="lg" w="60%" color="gray.100">
+          <div className="p-8">
+            <p className="w-3/4">
               In the app you can post a service, add a service to favourites,
               buy a service and then rate it among other functions. As the Admin
               user you can view all kind of statistics related to users and to
@@ -109,7 +111,8 @@ export default function WebService() {
 
       <div colSpan={2} align="cenleftter">
         <Slide triggerOnce>
-          <image
+          <img
+            className="w-3/4 "
             w="530px"
             h="300px"
             objectFit="cover"

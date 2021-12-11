@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div justify="center" pt="5%" pb="2%" bg="gray.900">
+    <div className='flex justify-center gap-12 my-12'>
       <div>
         <button color="cyan.200" variant="ghost">
           Linkedin

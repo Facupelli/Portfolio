@@ -8,15 +8,12 @@ import Matters from "../Quotes/Matters";
 
 export default function Works() {
   return (
-    <div className='bg-cyan-200'>
-      <div ml="10%" mb="5%">
-        <div align="baseline">
-          <h1 className='text-red-700'>
+    <div>
+      <div className='ml-28 my-14'>
+        <div>
+          <h1 className='font-semibold text-3xl'>
             Works
           </h1>
-          <button className='bg-cyan-400'>
-            BUTTON
-          </button>
         </div>
       </div>
 

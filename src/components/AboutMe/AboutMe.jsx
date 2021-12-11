@@ -2,15 +2,15 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div pt='5%' bg='gray.700'>
-      <div ml="10%">
-        <h4 as="h4" size="lg" color='gray.300'>
-          About Me
-        </h4>
+    <div className="pt-12 pb-8">
+      <div className="ml-28">
+        <p className="font-semibold text-3xl">About Me</p>
       </div>
-      <div templateColumns="repeat(2, 1fr)" gap={10} p="5%">
-        <div colSpan={1} align="right" mt="auto" mb="auto" ml="15%">
-          <p w="70%" align="left" color="gray.100">
+
+      <div className="grid content-center grid-cols-2 mb-8 gap-10 p-8">
+
+        <div align="center" className="mb-auto mt-auto">
+          <p className="w-3/4" align="left">
             Hello, my name is Facundo and I enjoy creating things since I was a
             child. I used to create motion graphics for enterpise videos. Then,
             while I was studying Industrial Design at Universidad Nacional de
@@ -22,12 +22,12 @@ export default function AboutMe() {
             and still learning everyday.
           </p>
         </div>
-        <div colSpan={1} align="Left" mt="auto" mb="auto">
-          <image
-            w="250px"
-            h="270px"
-            borderRadius='5px'
-            border='3px solid #1A202C'
+
+        <div align="center">
+          <img
+            className="w-1/3 h-fit"
+            borderRadius="5px"
+            border="3px solid #1A202C"
             boxShadow="7px -7px 0 -3px #2D3748, 7px -7px #9DECF9,
             14px -14px 0 -3px #2D3748, 14px -14px #ED64A6"
             objectFit="cover"
