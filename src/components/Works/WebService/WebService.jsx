@@ -1,16 +1,22 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import { ArrowUpIcon } from "@heroicons/react/solid";
 
-export default function WebService() {
+export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
+  const handleOnClick = () => {
+    setSeeMoreWeb(!seeMoreWeb);
+  };
   return (
     <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2" align="center">
+      <div className="col-span-2 flex justify-center" align="center">
         <Fade triggerOnce>
           <p className="text-base font-semibold" color="purple.300">
             WEBSERVICE
           </p>
-          <button aria-label="external-link" />
+          <button onClick={handleOnClick}>
+            <ArrowUpIcon className="h-5 w-5 text-cyan-500" />
+          </button>
         </Fade>
       </div>
 

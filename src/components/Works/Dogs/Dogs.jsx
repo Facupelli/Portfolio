@@ -1,16 +1,23 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import { ArrowUpIcon } from "@heroicons/react/solid";
 
-export default function Dogs() {
+export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
+  const handleOnClick = () => {
+    setSeeMoreDogs(!seeMoreDogs);
+  };
+
   return (
     <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2" align="center">
+      <div className="col-span-2 flex justify-center" align="center">
         <Fade triggerOnce>
           <p className="text-base font-semibold" color="purple.300">
             THE DOG APP
           </p>
-          <button aria-label="external-Link" />
+          <button onClick={handleOnClick}>
+            <ArrowUpIcon className="h-5 w-5 text-cyan-500" />
+          </button>
         </Fade>
       </div>
 
