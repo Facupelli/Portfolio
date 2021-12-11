@@ -6,6 +6,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      white: colors.white,
       black: colors.black,
       slate: colors.slate,
       gray: colors.gray,
@@ -15,7 +16,6 @@ module.exports = {
       indigo: colors.indigo,
       violet: colors.violet,
       pink: colors.pink,
-
     },
     extend: {
       spacing: {
@@ -25,6 +25,12 @@ module.exports = {
         body: ["Lato"],
         title: ["Merriweather"],
       },
+    },
+  },
+  variants: {
+    extend: {
+      blur: ['hover'],
+      display: ["group-hover"],
     },
   },
   plugins: [],

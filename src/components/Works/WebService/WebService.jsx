@@ -1,17 +1,18 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon } from "@heroicons/react/solid";
+import s from './WebService.module.css';
 
 export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
   const handleOnClick = () => {
     setSeeMoreWeb(!seeMoreWeb);
   };
   return (
-    <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
+    <div className="grid mb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2 flex justify-center" align="center">
+      <div className="col-span-2 flex justify-center gap-2 items-center" align="center">
         <Fade triggerOnce>
-          <p className="text-base font-semibold" color="purple.300">
+          <p className="text-2xl font-semibold" color="purple.300">
             WEBSERVICE
           </p>
           <button onClick={handleOnClick}>
@@ -37,13 +38,8 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div colSpan={2} align="left">
         <Slide triggerOnce>
           <img
-            className="w-3/4 "
-            w="530px"
-            h="300px"
+            className={s.img1y3}
             objectFit="cover"
-            borderRadius="5px"
-            boxShadow="7px -7px 0 -3px #2D3748, 7px -7px #9DECF9,
-            14px -14px 0 -3px #2D3748, 14px -14px #ED64A6"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
             alt="landing"
           />
@@ -54,13 +50,8 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div colSpan={2} align="right">
         <Slide duration={1500} triggerOnce>
           <img
-            className="w-3/4 "
-            w="530px"
-            h="300px"
+            className={s.img2}
             objectFit="cover"
-            borderRadius="5px"
-            boxShadow="-7px -7px 0 -3px #1A202C, -7px -7px #9DECF9,
-            -14px -14px 0 -3px #1A202C, -14px -14px #ED64A6"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
             alt="landing"
           />
@@ -118,13 +109,8 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div colSpan={2} align="cenleftter">
         <Slide triggerOnce>
           <img
-            className="w-3/4 "
-            w="530px"
-            h="300px"
+            className={s.img1y3}
             objectFit="cover"
-            borderRadius="5px"
-            boxShadow="7px -7px 0 -3px #2D3748, 7px -7px #9DECF9,
-            14px -14px 0 -3px #2D3748, 14px -14px #ED64A6"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
             alt="landing"
           />

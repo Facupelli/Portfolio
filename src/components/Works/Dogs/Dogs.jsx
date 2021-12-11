@@ -1,6 +1,7 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon } from "@heroicons/react/solid";
+import s from "./Dogs.module.css";
 
 export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   const handleOnClick = () => {
@@ -10,9 +11,9 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   return (
     <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2 flex justify-center" align="center">
+      <div className="col-span-2 flex justify-center gap-2 items-center" align="center">
         <Fade triggerOnce>
-          <p className="text-base font-semibold" color="purple.300">
+          <p className="text-2xl font-semibold" color="purple.300">
             THE DOG APP
           </p>
           <button onClick={handleOnClick}>
@@ -40,13 +41,9 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         <Slide triggerOnce>
           <div>
             <img
-              className="w-3/4 "
-              w="530px"
-              h="300px"
+              className={s.img1y3}
               objectFit="cover"
               borderRadius="5px"
-              boxShadow="7px -7px 0 -3px #2D3748, 7px -7px #9DECF9,
-            14px -14px 0 -3px #2D3748, 14px -14px #ED64A6"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
               alt="landing"
             />
@@ -59,13 +56,8 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         <Slide duration={1500} triggerOnce>
           <div>
             <img
-              className="w-3/4 "
-              w="530px"
-              h="300px"
+              className={s.img2} 
               objectFit="cover"
-              borderRadius="5px"
-              boxShadow="-7px -7px 0 -3px #1A202C, -7px -7px #9DECF9,
-            -14px -14px 0 -3px #1A202C, -14px -14px #ED64A6"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
               alt="landing"
             />
@@ -102,13 +94,8 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       <div>
         <Slide triggerOnce>
           <img
-            className="w-3/4 "
-            w="530px"
-            h="300px"
+            className={s.img1y3}
             objectFit="cover"
-            borderRadius="5px"
-            boxShadow="7px -7px 0 -3px #2D3748, 7px -7px #9DECF9,
-            14px -14px 0 -3px #2D3748, 14px -14px #ED64A6"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
             alt="landing"
           />

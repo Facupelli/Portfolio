@@ -9,6 +9,21 @@ export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
 
+  // const [showTextDog, setShowTextDog] = useState(false);
+
+  // const handleMouseEnter = () => {
+  //   setShowTextDog(true);
+  // };
+  // const handleMouseLeave = () => {
+  //   setShowTextDog(false);
+  // };
+
+  const dogImage =
+    "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
+
+  const webImage =
+    "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png";
+
   const handleOnClickDog = () => {
     setSeeMoreDogs(!seeMoreDogs);
   };
@@ -26,16 +41,18 @@ export default function Works() {
       <div>
         {!seeMoreDogs && (
           <div className="flex justify-center ">
-            <img
-              className="w-1/2 h-fit rounded-md "
-              src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
-              alt="landing-dog"
-            />
-            <div>
-              <p>see more</p>
-              <button onClick={handleOnClickDog}>
-                <ArrowDownIcon className="h-5 w-5 text-cyan-500" />
-              </button>
+            <div
+              className="group w-1/2 h-96 bg-no-repeat bg-contain rounded-md"
+              style={{ backgroundImage: `url('${dogImage}')` }}
+            >
+              <div className="absolute">
+                <button onClick={handleOnClickDog}>
+                  <div className="flex gap-2 items-center">
+                    <p className="font-bold text-2xl font-body">SEE MORE</p>
+                    <ArrowDownIcon className="h-5 w-5 text-cyan-500" />
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         )}
@@ -47,25 +64,27 @@ export default function Works() {
         )}
       </div>
 
-      <div>
+      <div className="mt-20">
         {!seeMoreWeb && (
           <div className="flex justify-center ">
-            <img
-              className="w-1/2 h-fit rounded-md "
-              src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
-              alt="landing-web"
-            />
-            <div>
-              <p>see more</p>
-              <button onClick={handleOnClickWeb}>
-                <ArrowDownIcon className="h-5 w-5 text-cyan-500" />
-              </button>
+            <div
+              className="group w-1/2 h-96 bg-no-repeat bg-contain rounded-md"
+              style={{ backgroundImage: `url('${webImage}')` }}
+            >
+              <div className="absolute">
+                <button onClick={handleOnClickWeb}>
+                  <div className="flex gap-2 items-center">
+                    <p className="font-bold text-2xl font-body">SEE MORE</p>
+                    <ArrowDownIcon className="h-5 w-5 text-cyan-500" />
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         )}
       </div>
 
-      <div>
+      <div className="mt-20">
         {seeMoreWeb && (
           <WebService setSeeMoreWeb={setSeeMoreWeb} seeMoreWeb={seeMoreWeb} />
         )}
