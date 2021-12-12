@@ -78,21 +78,17 @@ export default function Works() {
       </div>
 
       {/* ----------------------------------- WEBSERVICE CARD ------------------------------------------ */}
-      <div className="pt-20">
+      <div className="pt-20 flex justify-center">
         {!seeMoreWeb && (
-          <div className="flex justify-center ">
-            <div
-              className="group w-1/2 h-96 bg-no-repeat bg-contain rounded-md"
-              style={{ backgroundImage: `url('${webImage}')` }}
-            >
-              <div className="absolute">
-                <button onClick={handleOnClickWeb}>
-                  <div className="flex gap-2 items-center">
-                    <p className="font-bold text-2xl font-body">SEE MORE</p>
-                    <ArrowDownIcon className="h-5 w-5 text-cyan-500" />
-                  </div>
-                </button>
-              </div>
+          <div className={s.image}>
+            <img className={s.image__img} src={webImage} alt="webservice" />
+            <div className={s.image__overlay}>
+              <button onClick={handleOnClickWeb}>
+                <div className={s.image__title}>
+                  <div>SEE MORE</div>
+                  <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                </div>
+              </button>
             </div>
           </div>
         )}
