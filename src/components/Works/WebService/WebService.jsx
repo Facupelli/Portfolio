@@ -23,9 +23,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
           <a href="https://github.com/Facupelli/PF-WebService" target="_blank">
             <img src={github} alt="github" className="h-6 w-6 fill-pink-400" />
           </a>
-          <button onClick={handleOnClick}>
-            <ArrowUpIcon className="h-6 w-6 ml-6 text-pink-400" />
-          </button>
+          <ArrowUpIcon
+            className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer"
+            onClick={handleOnClick}
+          />
         </Fade>
       </div>
 
