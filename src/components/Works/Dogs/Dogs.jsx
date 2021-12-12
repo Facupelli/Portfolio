@@ -4,7 +4,6 @@ import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
 import s from "./Dogs.module.css";
 import github from "../../../Media/github.png";
 
-
 export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   const handleOnClick = () => {
     setSeeMoreDogs(!seeMoreDogs);
@@ -13,12 +12,22 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   return (
     <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
-      <div className="col-span-2 flex justify-center items-center gap-2 " align="center">
+      <div
+        className="col-span-2 flex justify-center items-center gap-2 pb-4"
+        align="center"
+      >
         <Fade triggerOnce>
-          <p className="text-2xl font-semibold text-pink-400" color="purple.300">
+          <p
+            className="text-2xl font-semibold text-pink-400"
+            color="purple.300"
+          >
             THE DOG APP
           </p>
-          <a href='https://pi-dogs-definitive.vercel.app/' target="_blank" className="">
+          <a
+            href="https://pi-dogs-definitive.vercel.app/"
+            target="_blank"
+            className=""
+          >
             <LinkIcon className="h-6 w-6 text-pink-400 " />
           </a>
           <a href="https://github.com/Facupelli/PI-Dogs" target="_blank">
@@ -64,7 +73,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         <Slide duration={1500} triggerOnce>
           <div>
             <img
-              className={s.img2} 
+              className={s.img2}
               objectFit="cover"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
               alt="landing"

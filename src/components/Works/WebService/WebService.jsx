@@ -12,12 +12,12 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
     <div className="grid pb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
-        className="col-span-2 flex justify-center  gap-4 items-center"
+        className="col-span-2 flex justify-center  gap-4 pb-4 items-center"
         align="center"
       >
         <Fade triggerOnce>
           <p className="text-2xl font-semibold text-pink-400">WEBSERVICE</p>
-          <a href='https://pf-web-service.vercel.app/' target="_blank">
+          <a href="https://pf-web-service.vercel.app/" target="_blank">
             <LinkIcon className="h-6 w-6 text-pink-400" />
           </a>
           <a href="https://github.com/Facupelli/PF-WebService" target="_blank">

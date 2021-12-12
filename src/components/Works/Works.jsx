@@ -83,6 +83,11 @@ export default function Works() {
         )}
       </div>
 
+      {/* --------------------------             MATTERS QUOTE ------------------------------------------ */}
+      <Fade triggerOnce>
+        <Matters />
+      </Fade>
+
       <div>
         {/* <Dogs /> */}
         {/* <Love /> */}
