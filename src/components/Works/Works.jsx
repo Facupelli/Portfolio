@@ -3,21 +3,13 @@ import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
 import Love from "../Quotes/Love";
 import Matters from "../Quotes/Matters";
+import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
 
 export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
-
-  // const [showTextDog, setShowTextDog] = useState(false);
-
-  // const handleMouseEnter = () => {
-  //   setShowTextDog(true);
-  // };
-  // const handleMouseLeave = () => {
-  //   setShowTextDog(false);
-  // };
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -40,35 +32,23 @@ export default function Works() {
       </div>
 
       {/* ----------------------------------- DOGS CARD ------------------------------------------ */}
-      <div className="flex justify-center">
-        {!seeMoreDogs && (
-          // <div>
-          //   <div className={s.card}>
-          //     <img className={s.dogImage} src={dogImage} />
-          //   </div>
-          //   <div className={s.info}>
-          //     <button onClick={handleOnClickDog}>
-          //       <div className="flex justify-center items-center gap-2 font-bold text-3xl text-cyan-400">
-          //         <p>SEE MORE</p>
-          //         <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-          //       </div>
-          //     </button>
-          //   </div>
-          // </div>
-
-          <div className={s.image}>
-            <img className={s.image__img} src={dogImage} alt="dogs" />
-            <div className={s.image__overlay}>
-              <button onClick={handleOnClickDog}>
-                <div className={s.image__title}>
-                  <div>SEE MORE</div>
-                  <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                </div>
-              </button>
+      <Fade triggerOnce>
+        <div className="flex justify-center">
+          {!seeMoreDogs && (
+            <div className={s.image}>
+              <img className={s.image__img} src={dogImage} alt="dogs" />
+              <div className={s.image__overlay}>
+                <button onClick={handleOnClickDog}>
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                </button>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      </Fade>
 
       {/* ----------------------------------- DESPLIEGUE DOGS ------------------------------------------ */}
       <div>
@@ -78,21 +58,23 @@ export default function Works() {
       </div>
 
       {/* ----------------------------------- WEBSERVICE CARD ------------------------------------------ */}
-      <div className="pt-20 flex justify-center">
-        {!seeMoreWeb && (
-          <div className={s.image}>
-            <img className={s.image__img} src={webImage} alt="webservice" />
-            <div className={s.image__overlay}>
-              <button onClick={handleOnClickWeb}>
-                <div className={s.image__title}>
-                  <div>SEE MORE</div>
-                  <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                </div>
-              </button>
+      <Fade triggerOnce>
+        <div className="pt-20 flex justify-center">
+          {!seeMoreWeb && (
+            <div className={s.image}>
+              <img className={s.image__img} src={webImage} alt="webservice" />
+              <div className={s.image__overlay}>
+                <button onClick={handleOnClickWeb}>
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                </button>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      </Fade>
 
       {/* ----------------------------------- DESPLIEGUE WEBSERVICE ------------------------------------------ */}
       <div className="pt-20">
