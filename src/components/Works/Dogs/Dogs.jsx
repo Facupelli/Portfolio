@@ -2,7 +2,8 @@ import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
 import s from "./Dogs.module.css";
-import github from "../../../Media/github.png";
+// import github from "../../../Media/github.png";
+import { MarkGithubIcon } from "@primer/octicons-react";
 
 export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   const handleOnClick = () => {
@@ -26,13 +27,17 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
           <a
             href="https://pi-dogs-definitive.vercel.app/"
             target="_blank"
+            rel="noreferrer"
             className=""
           >
             <LinkIcon className="h-6 w-6 text-pink-400 " />
           </a>
-          <a href="https://github.com/Facupelli/PI-Dogs" target="_blank">
-            <img src={github} alt="github" className="h-6 w-6 fill-pink-400" />
+
+          {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
+          <a href="https://github.com/Facupelli/PI-Dogs" target="_blank" rel="noreferrer">
+            <MarkGithubIcon size={26} fill="#f472b6" />
           </a>
+
           <ArrowUpIcon
             className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer"
             onClick={handleOnClick}
@@ -60,7 +65,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
           <div>
             <img
               className={s.img1y3}
-              objectFit="cover"
+              objectfit="cover"
               borderRadius="5px"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
               alt="landing"
@@ -75,7 +80,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
           <div>
             <img
               className={s.img2}
-              objectFit="cover"
+              objectfit="cover"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
               alt="landing"
             />
@@ -113,7 +118,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         <Slide triggerOnce>
           <img
             className={s.img1y3}
-            objectFit="cover"
+            objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
             alt="landing"
           />

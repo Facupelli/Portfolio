@@ -2,7 +2,8 @@ import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
 import s from "./WebService.module.css";
-import github from "../../../Media/github.png";
+// import github from "../../../Media/github.png";
+import { MarkGithubIcon } from "@primer/octicons-react";
 
 export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
   const handleOnClick = () => {
@@ -17,11 +18,12 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       >
         <Fade triggerOnce>
           <p className="text-2xl font-semibold text-pink-400">WEBSERVICE</p>
-          <a href="https://pf-web-service.vercel.app/" target="_blank">
+          <a href="https://pf-web-service.vercel.app/" target="_blank" rel="noreferrer">
             <LinkIcon className="h-6 w-6 text-pink-400" />
           </a>
-          <a href="https://github.com/Facupelli/PF-WebService" target="_blank">
-            <img src={github} alt="github" className="h-6 w-6 fill-pink-400" />
+          {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
+          <a href="https://github.com/Facupelli/PI-Dogs" target="_blank" rel="noreferrer">
+            <MarkGithubIcon size={26} fill="#f472b6" />
           </a>
           <ArrowUpIcon
             className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer"
@@ -48,7 +50,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         <Slide triggerOnce>
           <img
             className={s.img1y3}
-            objectFit="cover"
+            objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
             alt="landing"
           />
@@ -60,7 +62,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         <Slide duration={1500} triggerOnce>
           <img
             className={s.img2}
-            objectFit="cover"
+            objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
             alt="landing"
           />
@@ -119,7 +121,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         <Slide triggerOnce>
           <img
             className={s.img1y3}
-            objectFit="cover"
+            objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
             alt="landing"
           />

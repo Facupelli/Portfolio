@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
-import Love from "../Quotes/Love";
 import Matters from "../Quotes/Matters";
 import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon } from "@heroicons/react/solid";

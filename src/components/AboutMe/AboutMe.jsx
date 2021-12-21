@@ -24,7 +24,7 @@ export default function AboutMe() {
         <img
           className={s.img}
           border="3px solid #1A202C"
-          objectFit="cover"
+          objectfit="cover"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
           alt="landing"
         />
