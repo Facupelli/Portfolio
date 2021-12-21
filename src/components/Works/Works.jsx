@@ -5,10 +5,12 @@ import Matters from "../Quotes/Matters";
 import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
+import cuyo from '../../Media/cuyo.png'
 
 export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
+  const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -57,6 +59,7 @@ export default function Works() {
       </div>
 
       {/* ----------------------------------- WEBSERVICE CARD ------------------------------------------ */}
+
       <Fade triggerOnce>
         <div className="pt-20 flex justify-center">
           {!seeMoreWeb && (
@@ -81,6 +84,32 @@ export default function Works() {
           <WebService setSeeMoreWeb={setSeeMoreWeb} seeMoreWeb={seeMoreWeb} />
         )}
       </div>
+
+      {/* ----------------------------------- CUYOBREWERS CARD ------------------------------------------ */}
+
+      <Fade triggerOnce>
+        <div className=" flex justify-center">
+          {!seeMoreCuyo && (
+            <div className={s.image}>
+              <img className={s.image__img} src={cuyo} alt="webservice" />
+              <div className={s.image__overlay}>
+                {/* <button onClick={handleOnClickWeb}> */}
+                <a
+                  href="https://github.com/Facupelli/Cuyo-Brewers-Friends"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                </a>
+                {/* </button> */}
+              </div>
+            </div>
+          )}
+        </div>
+      </Fade>
 
       {/* --------------------------             MATTERS QUOTE ------------------------------------------ */}
       <Fade triggerOnce>
