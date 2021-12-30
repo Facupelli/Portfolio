@@ -5,7 +5,7 @@ import Matters from "../Quotes/Matters";
 import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
-import cuyo from '../../Media/cuyo.png'
+import cuyoNew from '../../Media/cuyoNew.png'
 
 export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
@@ -91,7 +91,7 @@ export default function Works() {
         <div className=" flex justify-center">
           {!seeMoreCuyo && (
             <div className={s.image}>
-              <img className={s.image__img} src={cuyo} alt="webservice" />
+              <img className={s.image__img} src={cuyoNew} alt="webservice" />
               <div className={s.image__overlay}>
                 {/* <button onClick={handleOnClickWeb}> */}
                 <a
