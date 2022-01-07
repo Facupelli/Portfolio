@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex justify-center gap-24 py-12 bg-gray-900">
+    <div className="flex justify-center gap-12 md:gap-24 py-12 bg-gray-900">
       <div>
         <a
           className="text-lg text-cyan-200 font-bold font-body transition duration-200 hover:text-pink-500"

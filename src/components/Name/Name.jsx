@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Name() {
   return (
-    <div className='pl-28 pt-20'>
+    <div className='pl-12 pt-8 md:pl-28 md:pt-20'>
       <div>
         <h6 className='text-sm font-body'>
           Hi, my name is
@@ -15,7 +15,7 @@ export default function Name() {
         </h2>
       </div>
 
-      <div  className='w-35% mt-2 text-base font-body'>
+      <div  className='w-75% md:w-35% mt-2 text-base font-body'>
         <p>
           I'm a developer with great team work ability. I love code and I'm always trying to
           learn from everything I see and from other people. I love being

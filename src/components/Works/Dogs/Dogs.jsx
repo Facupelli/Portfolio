@@ -1,8 +1,6 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
-import s from "./Dogs.module.css";
-// import github from "../../../Media/github.png";
 import { MarkGithubIcon } from "@primer/octicons-react";
 
 export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
@@ -34,7 +32,11 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
           </a>
 
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
-          <a href="https://github.com/Facupelli/PI-Dogs" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/Facupelli/PI-Dogs"
+            target="_blank"
+            rel="noreferrer"
+          >
             <MarkGithubIcon size={26} fill="#f472b6" />
           </a>
 
@@ -46,25 +48,25 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div align="right" className="mt-auto mb-auto">
+      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
-          <div className="p-8">
-            <p className="w-3/4 text-white font-body">
+          <div className="px-8 md:p-8 ">
+            <p className="md:w-3/4 text-white font-body">
               This was my first full stack experience at Henry Bootcamp. The
               Dogg App is a SPA (Single Page Application) that consumes data of
               an API (The Dog API). In the app you can find all dogs breeds,
-              search breeds by name, filter breeds by temperaments and order
+              search breeds by name, filter breeds by temperament and sort
               them by weight or alphabetically.
             </p>
           </div>
         </Slide>
       </div>
 
-      <div colSpan={1} align="left">
+      <div className="col-span-2 md:col-span-1 md:text-left">
         <Slide triggerOnce>
           <div>
             <img
-              className={s.img1y3}
+              className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
               objectfit="cover"
               borderRadius="5px"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
@@ -75,11 +77,11 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       </div>
 
       {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
-      <div colSpan={1} align="right">
+      <div  align="right" className="col-span-2 md:col-span-1">
         <Slide duration={1500} triggerOnce>
           <div>
             <img
-              className={s.img2}
+              className='shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
               objectfit="cover"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
               alt="landing"
@@ -88,10 +90,10 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         </Slide>
       </div>
 
-      <div className="mt-auto mb-auto" align="left">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto" align="left">
         <Slide triggerOnce>
-          <div className="p-8">
-            <p className="w-3/4 text-white font-body">
+          <div className="px-8 md:p-8">
+            <p className="md:w-3/4 text-white font-body">
               The technologies I used for this project were React, Redux and
               pure CSS for the FRONT-END. Node.js, Express, Sequelize and PSQL
               for the BACK-END. Other tools I used were Git, Github, Heroku and
@@ -102,10 +104,10 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       </div>
 
       {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
-      <div className="mt-auto mb-auto" align="right">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto" align="right">
         <Slide duration={1500} triggerOnce>
-          <div className="p-8">
-            <p className="w-3/4 text-white font-body">
+          <div className="px-8 md:p-8">
+            <p className="md:w-3/4 text-white font-body">
               You can create a breed selecting some characteristics and a photo.
               The new breed created is stored in the database. You can then
               filter by API breeds or your own breeds.
@@ -114,10 +116,10 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         </Slide>
       </div>
 
-      <div>
+      <div className="col-span-2 md:col-span-1">
         <Slide triggerOnce>
           <img
-            className={s.img1y3}
+            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
             alt="landing"

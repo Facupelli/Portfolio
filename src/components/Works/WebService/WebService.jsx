@@ -1,8 +1,6 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
-import s from "./WebService.module.css";
-// import github from "../../../Media/github.png";
 import { MarkGithubIcon } from "@primer/octicons-react";
 
 export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
@@ -33,10 +31,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div align="right" className="mt-auto mb-auto">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
-          <div className="p-8">
-            <p className="w-3/4 text-white font-body">
+          <div className="px-8 md:p-8">
+            <p className="md:w-3/4 text-white font-body">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
               WebService is a service e-commerce where you can offer or buy a
@@ -46,10 +44,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         </Slide>
       </div>
 
-      <div colSpan={2} align="left">
+      <div className="col-span-2 md:col-span-1" align="left">
         <Slide triggerOnce>
           <img
-            className={s.img1y3}
+            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
             alt="landing"
@@ -58,10 +56,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
-      <div colSpan={2} align="right">
+      <div className="col-span-2 md:col-span-1" align="right">
         <Slide duration={1500} triggerOnce>
           <img
-            className={s.img2}
+            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
             alt="landing"
@@ -79,10 +77,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         />
       </GridItem> */}
 
-      <div align="left" className="mt-auto mb-auto">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide triggerOnce>
-          <div className="p-8">
-            <p className="w-3/4 text-white font-body">
+          <div className="px-8 md:p-8">
+            <p className="md:w-3/4 text-white font-body">
               The technologies we used for this project were React, Redux,
               Material UI among other libraries for the FRONT-END. Node.js,
               Express, Sequelize and PSQL for the BACK-END. Other tools we used
@@ -94,10 +92,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
-      <div align="right" className="mt-auto mb-auto">
+      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
-          <div className="p-8">
-            <p className="w-3/4 text-white font-body">
+          <div className="px-8 md:p-8">
+            <p className="md:w-3/4 text-white font-body">
               In the app you can post a service, add a service to favourites,
               buy a service and then rate it among other functions. As the Admin
               user you can view all kind of statistics related to users and to
@@ -117,10 +115,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         />
       </GridItem> */}
 
-      <div colSpan={2} align="cenleftter">
+      <div className="col-span-2 md:col-span-1" align="cenleftter">
         <Slide triggerOnce>
           <img
-            className={s.img1y3}
+            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
             alt="landing"

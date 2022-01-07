@@ -28,7 +28,7 @@ export default function Works() {
 
   return (
     <div className="bg-gray-800">
-      <div className="pl-28 py-16">
+      <div className="pl-10 py-8 md:pl-28 md:py-16">
         <h1 className="font-semibold text-3xl text-white">Works</h1>
       </div>
 

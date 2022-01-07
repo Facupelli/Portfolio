@@ -1,15 +1,14 @@
 import React from "react";
-import s from "./AboutMe.module.css";
 
 export default function AboutMe() {
   return (
     <div className="py-16 bg-gray-900">
-      <div className="ml-28 pb-16 ">
+      <div className="pl-10 pb-16 md:pl-28 md:py-16">
         <p className="font-semibold text-3xl text-white ">About Me</p>
       </div>
 
-      <div className="flex justify-center items-center	 gap-16 px-40">
-        <p className="w-1/3 text-white">
+      <div className="grid grid-cols-2 gap-12 place-items-center px-6 md:px-0 md:text-right place-self-end ">
+        <p className="col-span-2 md:col-span-1 ml-auto  md:w-2/3 text-white">
           Hello, my name is Facundo and I enjoy creating things since I was a
           child. I used to create motion graphics for enterpise videos. Then,
           while I was studying Industrial Design at Universidad Nacional de San
@@ -22,8 +21,7 @@ export default function AboutMe() {
         </p>
 
         <img
-          className={s.img}
-          border="3px solid #1A202C"
+          className="col-span-2 md:col-span-1 md:mr-auto  w-3/4 md:w-1/2 shadow-worksImagesRight rounded-lg"
           objectfit="cover"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
           alt="landing"
