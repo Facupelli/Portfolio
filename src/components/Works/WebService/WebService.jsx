@@ -31,7 +31,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div className="col-span-2 md:col-span-1 mt-auto mb-auto">
+      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
