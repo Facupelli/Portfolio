@@ -4,7 +4,7 @@ import { HeartIcon } from "@heroicons/react/solid";
 export default function Matters() {
   return (
     <div className="flex justify-center pb-36">
-      <div className="flex items-center w-3/4 md:w-auto gap-2 p-2 md:p-4 mt-24 shadow-quotes hover:shadow-quotesHover transition transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) rounded-lg" >
+      <div className="transition ease-in-out duration-300 flex items-center w-3/4 md:w-auto gap-2 p-2 md:p-4 mt-24 shadow-quotes hover:shadow-quotesHover rounded-lg" >
         <p className="text-white  font-semibold  md:text-2xl font-title">
           What matters is how much love you put into what you do
         </p>

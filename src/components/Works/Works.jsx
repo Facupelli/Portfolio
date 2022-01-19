@@ -3,9 +3,11 @@ import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
 import Matters from "../Quotes/Matters";
 import { Fade } from "react-awesome-reveal";
-import { ArrowDownIcon } from "@heroicons/react/solid";
+import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
 import cuyoNew from '../../Media/cuyoNew.png'
+// import { ArrowDownIcon } from "@primer/octicons-react";
+
 
 export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
@@ -28,8 +30,9 @@ export default function Works() {
 
   return (
     <div className="bg-gray-800">
-      <div className="pl-10 py-8 md:pl-28 md:py-16">
-        <h1 className="font-semibold text-3xl text-white">Works</h1>
+      <div className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16">
+        <h1 className="font-semibold text-4xl text-white">Works</h1>
+        <ArrowCircleDownIcon className="w-8 text-white" />
       </div>
 
       {/* ----------------------------------- DOGS CARD ------------------------------------------ */}
