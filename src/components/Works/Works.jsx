@@ -6,7 +6,7 @@ import Matters from "../Quotes/Matters";
 import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
-import cuyoNew from "../../Media/cuyoNew.png";
+import chat from "../../Media/chatroom.png";
 import home from "../../Media/cuyobrewers/home.png";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
@@ -15,6 +15,8 @@ export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
+  const [seeMoreChat, setSeeMoreChat] = useState(false);
+
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -32,6 +34,10 @@ export default function Works() {
 
   const handleOnClickCuyo = () => {
     setSeeMoreCuyo(!seeMoreCuyo);
+  };
+
+  const handleOnClickChat = () => {
+    setSeeMoreChat(!seeMoreChat);
   };
 
   return (
@@ -103,16 +109,10 @@ export default function Works() {
               <img className={s.image__img} src={home} alt="webservice" />
               <div className={s.image__overlay}>
                 <button onClick={handleOnClickCuyo}>
-                  {/* <a
-                  href="https://github.com/Facupelli/Cuyo-Brewers-Friends"
-                  target="_blank"
-                  rel="noreferrer"
-                > */}
                   <div className={s.image__title}>
                     <div>SEE MORE</div>
                     <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
                   </div>
-                  {/* </a> */}
                 </button>
               </div>
             </div>
@@ -130,6 +130,43 @@ export default function Works() {
           />
         )}
       </div>
+
+      {/* ----------------------------------- CUYOBREWERS CARD ------------------------------------------ */}
+
+      <Fade triggerOnce>
+        <div className=" flex justify-center">
+          {!seeMoreChat && (
+            <div className={s.image}>
+              <img className={s.image__img} src={chat} alt="chat_room" />
+              <div className={s.image__overlay}>
+                {/* <button onClick={handleOnClickCuyo}> */}
+                  <a
+                  href="https://github.com/Facupelli/chat-room"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                  </a>
+                {/* </button> */}
+              </div>
+            </div>
+          )}
+        </div>
+      </Fade>
+
+      {/* ----------------------------------- DESPLIEGUE CUYOBREWRES ------------------------------------------ */}
+
+      {/* <div className="pt-20">
+        {seeMoreChat && (
+          <CuyoBrewers
+            setSeeMoreCuyo={setSeeMoreCuyo}
+            seeMoreCuyo={seeMoreCuyo}
+          />
+        )}
+      </div> */}
 
       {/* --------------------------             MATTERS QUOTE ------------------------------------------ */}
       <Fade triggerOnce>
