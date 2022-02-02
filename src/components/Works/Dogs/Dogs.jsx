@@ -12,12 +12,12 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
     <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
-        className="col-span-2 flex justify-center items-center gap-2 pb-4"
+        className="col-span-2 flex justify-center items-center gap-4 pb-4"
         align="center"
       >
         <Fade triggerOnce>
           <p
-            className="text-2xl font-semibold text-pink-400"
+            className="text-3xl font-semibold text-pink-400"
             color="purple.300"
           >
             THE DOG APP
@@ -26,9 +26,8 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
             href="https://pi-dogs-definitive.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            className=""
           >
-            <LinkIcon className="h-6 w-6 text-pink-400 " />
+            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100" />
           </a>
 
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
@@ -37,11 +36,14 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
             target="_blank"
             rel="noreferrer"
           >
-            <MarkGithubIcon size={26} fill="#f472b6" />
+            <MarkGithubIcon
+              size={26}
+              className="text-pink-400 hover:text-pink-100"
+            />
           </a>
 
           <ArrowUpIcon
-            className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer"
+            className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer hover:text-pink-100"
             onClick={handleOnClick}
           />
         </Fade>
@@ -55,8 +57,8 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
               This was my first full stack experience at Henry Bootcamp. The
               Dogg App is a SPA (Single Page Application) that consumes data of
               an API (The Dog API). In the app you can find all dogs breeds,
-              search breeds by name, filter breeds by temperament and sort
-              them by weight or alphabetically.
+              search breeds by name, filter breeds by temperament and sort them
+              by weight or alphabetically.
             </p>
           </div>
         </Slide>
@@ -66,7 +68,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         <Slide triggerOnce>
           <div>
             <img
-              className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
+              className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
               objectfit="cover"
               borderRadius="5px"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
@@ -77,11 +79,11 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       </div>
 
       {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
-      <div  align="right" className="col-span-2 md:col-span-1">
+      <div align="right" className="col-span-2 md:col-span-1">
         <Slide duration={1500} triggerOnce>
           <div>
             <img
-              className='shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
+              className="shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
               objectfit="cover"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711315/home_pidogs_fgczln.png"
               alt="landing"
@@ -119,7 +121,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       <div className="col-span-2 md:col-span-1">
         <Slide triggerOnce>
           <img
-            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
+            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637711182/createbreed_pidogs_j2ehkg.png"
             alt="landing"

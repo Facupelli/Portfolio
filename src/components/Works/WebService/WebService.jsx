@@ -15,16 +15,29 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         align="center"
       >
         <Fade triggerOnce>
-          <p className="text-2xl font-semibold text-pink-400">WEBSERVICE</p>
-          <a href="https://pf-web-service.vercel.app/" target="_blank" rel="noreferrer">
-            <LinkIcon className="h-6 w-6 text-pink-400" />
+          <p className="text-3xl font-semibold text-pink-400 hover:text-pink-100">
+            WEBSERVICE
+          </p>
+          <a
+            href="https://pf-web-service.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100" />
           </a>
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
-          <a href="https://github.com/Facupelli/PI-Dogs" target="_blank" rel="noreferrer">
-            <MarkGithubIcon size={26} fill="#f472b6" />
+          <a
+            href="https://github.com/Facupelli/PI-Dogs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <MarkGithubIcon
+              size={26}
+              className="text-pink-400 hover:text-pink-100"
+            />
           </a>
           <ArrowUpIcon
-            className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer"
+            className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer hover:text-pink-100"
             onClick={handleOnClick}
           />
         </Fade>
@@ -47,7 +60,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div className="col-span-2 md:col-span-1" align="left">
         <Slide triggerOnce>
           <img
-            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
+            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
             alt="landing"
@@ -59,7 +72,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div className="col-span-2 md:col-span-1" align="right">
         <Slide duration={1500} triggerOnce>
           <img
-            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
+            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
             alt="landing"
@@ -118,7 +131,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div className="col-span-2 md:col-span-1" align="cenleftter">
         <Slide triggerOnce>
           <img
-            className='shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4'
+            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
             alt="landing"

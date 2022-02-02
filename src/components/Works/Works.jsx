@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Dogs from "./Dogs/Dogs";
 import WebService from "./WebService/WebService";
+import CuyoBrewers from "./CuyoBrewers/CuyoBrewers";
 import Matters from "../Quotes/Matters";
 import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
-import cuyoNew from '../../Media/cuyoNew.png'
-// import { ArrowDownIcon } from "@primer/octicons-react";
+import cuyoNew from "../../Media/cuyoNew.png";
+import home from "../../Media/cuyobrewers/home.png";
 
+// import { ArrowDownIcon } from "@primer/octicons-react";
 
 export default function Works() {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
@@ -26,6 +28,10 @@ export default function Works() {
 
   const handleOnClickWeb = () => {
     setSeeMoreWeb(!seeMoreWeb);
+  };
+
+  const handleOnClickCuyo = () => {
+    setSeeMoreCuyo(!seeMoreCuyo);
   };
 
   return (
@@ -94,25 +100,36 @@ export default function Works() {
         <div className=" flex justify-center">
           {!seeMoreCuyo && (
             <div className={s.image}>
-              <img className={s.image__img} src={cuyoNew} alt="webservice" />
+              <img className={s.image__img} src={home} alt="webservice" />
               <div className={s.image__overlay}>
-                {/* <button onClick={handleOnClickWeb}> */}
-                <a
+                <button onClick={handleOnClickCuyo}>
+                  {/* <a
                   href="https://github.com/Facupelli/Cuyo-Brewers-Friends"
                   target="_blank"
                   rel="noreferrer"
-                >
+                > */}
                   <div className={s.image__title}>
                     <div>SEE MORE</div>
                     <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
                   </div>
-                </a>
-                {/* </button> */}
+                  {/* </a> */}
+                </button>
               </div>
             </div>
           )}
         </div>
       </Fade>
+
+      {/* ----------------------------------- DESPLIEGUE CUYOBREWRES ------------------------------------------ */}
+
+      <div className="pt-20">
+        {seeMoreCuyo && (
+          <CuyoBrewers
+            setSeeMoreCuyo={setSeeMoreCuyo}
+            seeMoreCuyo={seeMoreCuyo}
+          />
+        )}
+      </div>
 
       {/* --------------------------             MATTERS QUOTE ------------------------------------------ */}
       <Fade triggerOnce>
