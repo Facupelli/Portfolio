@@ -22,16 +22,16 @@ export const Alkemy = ({ setSeeMoreAlkemy, seeMoreAlkemy }) => {
           <p className="text-3xl font-semibold text-pink-400">
             Alkemy Frontend Challenge
           </p>
-          <a
-            href="https://cuyo-brewers-friends.vercel.app/homes"
+          {/* <a
+            href=""
             target="_blank"
             rel="noreferrer"
-          >
+          > */}
             <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100" />
-          </a>
+          {/* </a> */}
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
           <a
-            href="https://github.com/Facupelli/Cuyo-Brewers-Friends"
+            href="https://github.com/Facupelli/Frontend-Alkemy-Challenge"
             target="_blank"
             rel="noreferrer"
           >
