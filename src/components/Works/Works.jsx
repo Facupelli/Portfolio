@@ -8,6 +8,8 @@ import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
 import chat from "../../Media/chatroom.png";
 import home from "../../Media/cuyobrewers/home.png";
+import homeAlkmey from "../../Media/alkmey/home.png";
+
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
@@ -16,6 +18,8 @@ export default function Works() {
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
   const [seeMoreChat, setSeeMoreChat] = useState(false);
+  const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
+
 
 
   const dogImage =
@@ -131,10 +135,47 @@ export default function Works() {
         )}
       </div>
 
-      {/* ----------------------------------- CUYOBREWERS CARD ------------------------------------------ */}
+      {/* ----------------------------------- ALKEMY CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
         <div className=" flex justify-center">
+          {!seeMoreAlkemy && (
+            <div className={s.image}>
+              <img className={s.image__img} src={homeAlkmey} alt="chat_room" />
+              <div className={s.image__overlay}>
+                {/* <button onClick={handleOnClickCuyo}> */}
+                  <a
+                  href="https://github.com/Facupelli/Frontend-Alkemy-Challenge"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                  </a>
+                {/* </button> */}
+              </div>
+            </div>
+          )}
+        </div>
+      </Fade>
+
+      {/* ----------------------------------- ALKEMY DESPLIEGUE ------------------------------------------ */}
+
+      {/* <div className="pt-20">
+        {seeMoreAlkemy && (
+          <CuyoBrewers
+            setSeeMoreAlkemy={setSeeMoreAlkmey}
+            seeMoreAlkemy={seeMoreAlkemy}
+          />
+        )}
+      </div> */}
+
+      {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
+
+      <Fade triggerOnce>
+        <div className="mt-20 flex justify-center">
           {!seeMoreChat && (
             <div className={s.image}>
               <img className={s.image__img} src={chat} alt="chat_room" />
@@ -157,13 +198,13 @@ export default function Works() {
         </div>
       </Fade>
 
-      {/* ----------------------------------- DESPLIEGUE CUYOBREWRES ------------------------------------------ */}
+      {/* ----------------------------------- CHAT-ROOM DESPLIEGUE ------------------------------------------ */}
 
       {/* <div className="pt-20">
         {seeMoreChat && (
           <CuyoBrewers
-            setSeeMoreCuyo={setSeeMoreCuyo}
-            seeMoreCuyo={seeMoreCuyo}
+            setSeeChat={setSeeMoreChat}
+            seeMoreChat={seeMoreChat}
           />
         )}
       </div> */}
