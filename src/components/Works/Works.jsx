@@ -171,7 +171,7 @@ export default function Works() {
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className="mt-20 flex justify-center">
+        <div className="flex justify-center">
           {!seeMoreChat && (
             <div className={s.image}>
               <img className={s.image__img} src={chat} alt="chat_room" />
