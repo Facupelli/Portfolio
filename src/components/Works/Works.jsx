@@ -8,8 +8,8 @@ import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
 import chat from "../../Media/chatroom.png";
 import home from "../../Media/cuyobrewers/home.png";
-import homeAlkmey from "../../Media/alkmey/home.png";
-
+import homeAlkemy from "../../Media/alkemy/home.png";
+import { Alkemy } from "./Alkemy/Alkemy";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
@@ -19,8 +19,6 @@ export default function Works() {
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
   const [seeMoreChat, setSeeMoreChat] = useState(false);
   const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
-
-
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -42,6 +40,10 @@ export default function Works() {
 
   const handleOnClickChat = () => {
     setSeeMoreChat(!seeMoreChat);
+  };
+
+  const handleOnClickAlkemy = () => {
+    setSeeMoreAlkemy(!seeMoreAlkemy);
   };
 
   return (
@@ -141,20 +143,14 @@ export default function Works() {
         <div className=" flex justify-center">
           {!seeMoreAlkemy && (
             <div className={s.image}>
-              <img className={s.image__img} src={homeAlkmey} alt="chat_room" />
+              <img className={s.image__img} src={homeAlkemy} alt="chat_room" />
               <div className={s.image__overlay}>
-                {/* <button onClick={handleOnClickCuyo}> */}
-                  <a
-                  href="https://github.com/Facupelli/Frontend-Alkemy-Challenge"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <button onClick={handleOnClickAlkemy}>
                   <div className={s.image__title}>
                     <div>SEE MORE</div>
                     <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
                   </div>
-                  </a>
-                {/* </button> */}
+                </button>
               </div>
             </div>
           )}
@@ -163,14 +159,14 @@ export default function Works() {
 
       {/* ----------------------------------- ALKEMY DESPLIEGUE ------------------------------------------ */}
 
-      {/* <div className="pt-20">
+      <div className="pt-20">
         {seeMoreAlkemy && (
-          <CuyoBrewers
-            setSeeMoreAlkemy={setSeeMoreAlkmey}
+          <Alkemy
+            setSeeMoreAlkemy={setSeeMoreAlkemy}
             seeMoreAlkemy={seeMoreAlkemy}
           />
         )}
-      </div> */}
+      </div>
 
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
 
@@ -181,7 +177,7 @@ export default function Works() {
               <img className={s.image__img} src={chat} alt="chat_room" />
               <div className={s.image__overlay}>
                 {/* <button onClick={handleOnClickCuyo}> */}
-                  <a
+                <a
                   href="https://github.com/Facupelli/chat-room"
                   target="_blank"
                   rel="noreferrer"
@@ -190,7 +186,7 @@ export default function Works() {
                     <div>SEE MORE</div>
                     <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
                   </div>
-                  </a>
+                </a>
                 {/* </button> */}
               </div>
             </div>
