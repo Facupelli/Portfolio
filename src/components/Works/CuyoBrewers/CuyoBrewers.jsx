@@ -23,7 +23,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
             CUYO-BREWERS-FRIENDS
           </p>
           <a
-            href="https://cuyo-brewers-friends.vercel.app/homes"
+            href="https://cuyo-brewers-friends.vercel.app"
             target="_blank"
             rel="noreferrer"
           >
