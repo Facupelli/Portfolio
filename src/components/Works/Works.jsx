@@ -23,7 +23,6 @@ export default function Works() {
   const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
 
-
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
 
@@ -54,7 +53,6 @@ export default function Works() {
     setSeeMoreTodo(!seeMoreTodo);
   };
 
-
   return (
     <div className="bg-gray-800">
       <div className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16">
@@ -82,16 +80,17 @@ export default function Works() {
       </Fade>
 
       {/* ----------------------------------- DESPLIEGUE DOGS ------------------------------------------ */}
-      <div>
-        {seeMoreDogs && (
+
+      {seeMoreDogs && (
+        <div className="">
           <Dogs setSeeMoreDogs={setSeeMoreDogs} seeMoreDogs={seeMoreDogs} />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* ----------------------------------- WEBSERVICE CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className="pt-20 flex justify-center">
+        <div className="mt-24 flex justify-center">
           {!seeMoreWeb && (
             <div className={s.image}>
               <img className={s.image__img} src={webImage} alt="webservice" />
@@ -109,16 +108,17 @@ export default function Works() {
       </Fade>
 
       {/* ----------------------------------- DESPLIEGUE WEBSERVICE ------------------------------------------ */}
-      <div className="pt-20">
-        {seeMoreWeb && (
+
+      {seeMoreWeb && (
+        <div className="">
           <WebService setSeeMoreWeb={setSeeMoreWeb} seeMoreWeb={seeMoreWeb} />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* ----------------------------------- CUYOBREWERS CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className=" flex justify-center">
+        <div className="mt-24 flex justify-center">
           {!seeMoreCuyo && (
             <div className={s.image}>
               <img className={s.image__img} src={home} alt="webservice" />
@@ -137,19 +137,19 @@ export default function Works() {
 
       {/* ----------------------------------- DESPLIEGUE CUYOBREWRES ------------------------------------------ */}
 
-      <div className="pt-20">
-        {seeMoreCuyo && (
+      {seeMoreCuyo && (
+        <div className="">
           <CuyoBrewers
             setSeeMoreCuyo={setSeeMoreCuyo}
             seeMoreCuyo={seeMoreCuyo}
           />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* ----------------------------------- ALKEMY CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className=" flex justify-center">
+        <div className="mt-24 flex justify-center">
           {!seeMoreAlkemy && (
             <div className={s.image}>
               <img className={s.image__img} src={homeAlkemy} alt="chat_room" />
@@ -168,19 +168,19 @@ export default function Works() {
 
       {/* ----------------------------------- ALKEMY DESPLIEGUE ------------------------------------------ */}
 
-      <div className="pt-20">
-        {seeMoreAlkemy && (
+      {seeMoreAlkemy && (
+        <div className="">
           <Alkemy
             setSeeMoreAlkemy={setSeeMoreAlkemy}
             seeMoreAlkemy={seeMoreAlkemy}
           />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* ----------------------------------- TODO-APP CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className=" flex justify-center">
+        <div className="mt-24 flex justify-center">
           {!seeMoreTodo && (
             <div className={s.image}>
               <img className={s.image__img} src={homeTodo1} alt="chat_room" />
@@ -199,19 +199,16 @@ export default function Works() {
 
       {/* ----------------------------------- TODO-APP DESPLIEGUE ------------------------------------------ */}
 
-      <div className="pt-20 pb-20">
-        {seeMoreTodo && (
-          <TodoApp
-            setSeeMoreTodo={setSeeMoreTodo}
-            seeMoreTodo={seeMoreTodo}
-          />
-        )}
-      </div>
+      {seeMoreTodo && (
+        <div className="">
+          <TodoApp setSeeMoreTodo={setSeeMoreTodo} seeMoreTodo={seeMoreTodo} />
+        </div>
+      )}
 
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className="flex justify-center">
+        <div className="mt-24 flex justify-center">
           {!seeMoreChat && (
             <div className={s.image}>
               <img className={s.image__img} src={chat} alt="chat_room" />
