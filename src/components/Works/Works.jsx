@@ -9,7 +9,9 @@ import s from "./Works.module.css";
 import chat from "../../Media/chatroom.png";
 import home from "../../Media/cuyobrewers/home.png";
 import homeAlkemy from "../../Media/alkemy/home.png";
+import homeTodo1 from "../../Media/todo/home1.png";
 import { Alkemy } from "./Alkemy/Alkemy";
+import TodoApp from "./TodoApp/TodoApp";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
@@ -19,6 +21,8 @@ export default function Works() {
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
   const [seeMoreChat, setSeeMoreChat] = useState(false);
   const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
+  const [seeMoreTodo, setSeeMoreTodo] = useState(false);
+
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -45,6 +49,11 @@ export default function Works() {
   const handleOnClickAlkemy = () => {
     setSeeMoreAlkemy(!seeMoreAlkemy);
   };
+
+  const handleOnClickTodo = () => {
+    setSeeMoreTodo(!seeMoreTodo);
+  };
+
 
   return (
     <div className="bg-gray-800">
@@ -164,6 +173,37 @@ export default function Works() {
           <Alkemy
             setSeeMoreAlkemy={setSeeMoreAlkemy}
             seeMoreAlkemy={seeMoreAlkemy}
+          />
+        )}
+      </div>
+
+      {/* ----------------------------------- TODO-APP CARD ------------------------------------------ */}
+
+      <Fade triggerOnce>
+        <div className=" flex justify-center">
+          {!seeMoreTodo && (
+            <div className={s.image}>
+              <img className={s.image__img} src={homeTodo1} alt="chat_room" />
+              <div className={s.image__overlay}>
+                <button onClick={handleOnClickTodo}>
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </Fade>
+
+      {/* ----------------------------------- TODO-APP DESPLIEGUE ------------------------------------------ */}
+
+      <div className="pt-20 pb-20">
+        {seeMoreTodo && (
+          <TodoApp
+            setSeeMoreTodo={setSeeMoreTodo}
+            seeMoreTodo={seeMoreTodo}
           />
         )}
       </div>
